@@ -27,3 +27,6 @@ gem 'faraday_middleware', '~> 0.13.1'
 
 # For hosting on Heroku
 gem 'rack-contrib', '~> 2.1.0'
+
+# Neo
+gem 'neo4j', '~> 9.6.0'

@@ -9,6 +9,12 @@ end
 
 task default: [:spec]
 
+namespace :graph do
+  task :export do
+    Export.run
+  end
+end
+
 namespace :cache do
   task :clear do
     CACHE.clear

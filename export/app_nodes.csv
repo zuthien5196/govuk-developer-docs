@@ -1,0 +1,81 @@
+app_name	puppet_name	doc_url	html_url	repo_url	sentry_url
+collections-publisher	https://docs.publishing.service.gov.uk/apps/collections-publisher.html	https://github.com/alphagov/collections-publisher	https://sentry.io/govuk/app-collections-publisher
+contacts-admin	https://docs.publishing.service.gov.uk/apps/contacts-admin.html	https://github.com/alphagov/contacts-admin	https://sentry.io/govuk/app-contacts-admin
+content-tagger	https://docs.publishing.service.gov.uk/apps/content-tagger.html	https://github.com/alphagov/content-tagger	https://sentry.io/govuk/app-content-tagger
+content-publisher	https://docs.publishing.service.gov.uk/apps/content-publisher.html	https://github.com/alphagov/content-publisher	https://sentry.io/govuk/app-content-publisher
+local-links-manager	https://docs.publishing.service.gov.uk/apps/local-links-manager.html	https://github.com/alphagov/local-links-manager	https://sentry.io/govuk/app-local-links-manager
+manuals-publisher	https://docs.publishing.service.gov.uk/apps/manuals-publisher.html	https://github.com/alphagov/manuals-publisher	https://sentry.io/govuk/app-manuals-publisher
+maslow	https://docs.publishing.service.gov.uk/apps/maslow.html	https://github.com/alphagov/maslow	https://sentry.io/govuk/app-maslow
+publisher	https://docs.publishing.service.gov.uk/apps/publisher.html	https://github.com/alphagov/publisher	https://sentry.io/govuk/app-publisher
+service-manual-publisher	https://docs.publishing.service.gov.uk/apps/service-manual-publisher.html	https://github.com/alphagov/service-manual-publisher	https://sentry.io/govuk/app-service-manual-publisher
+short-url-manager	https://docs.publishing.service.gov.uk/apps/short-url-manager.html	https://github.com/alphagov/short-url-manager	https://sentry.io/govuk/app-short-url-manager
+specialist-publisher	https://docs.publishing.service.gov.uk/apps/specialist-publisher.html	https://github.com/alphagov/specialist-publisher	https://sentry.io/govuk/app-specialist-publisher
+travel-advice-publisher	https://docs.publishing.service.gov.uk/apps/travel-advice-publisher.html	https://github.com/alphagov/travel-advice-publisher	https://sentry.io/govuk/app-travel-advice-publisher
+whitehall	https://docs.publishing.service.gov.uk/apps/whitehall.html	https://github.com/alphagov/whitehall	https://sentry.io/govuk/app-whitehall
+content-store	https://docs.publishing.service.gov.uk/apps/content-store.html	https://github.com/alphagov/content-store	https://sentry.io/govuk/app-content-store
+email-alert-api	https://docs.publishing.service.gov.uk/apps/email-alert-api.html	https://github.com/alphagov/email-alert-api	https://sentry.io/govuk/app-email-alert-api
+imminence	https://docs.publishing.service.gov.uk/apps/imminence.html	https://github.com/alphagov/imminence	https://sentry.io/govuk/app-imminence
+link-checker-api	https://docs.publishing.service.gov.uk/apps/link-checker-api.html	https://github.com/alphagov/link-checker-api	https://sentry.io/govuk/app-link-checker-api
+publishing-api	https://docs.publishing.service.gov.uk/apps/publishing-api.html	https://github.com/alphagov/publishing-api	https://sentry.io/govuk/app-publishing-api
+search-api	https://docs.publishing.service.gov.uk/apps/search-api.html	https://github.com/alphagov/search-api	https://sentry.io/govuk/app-search-api
+asset-manager	https://docs.publishing.service.gov.uk/apps/asset-manager.html	https://github.com/alphagov/asset-manager	https://sentry.io/govuk/app-asset-manager
+router-api	https://docs.publishing.service.gov.uk/apps/router-api.html	https://github.com/alphagov/router-api	https://sentry.io/govuk/app-router-api
+support-api	https://docs.publishing.service.gov.uk/apps/support-api.html	https://github.com/alphagov/support-api	https://sentry.io/govuk/app-support-api
+hmrc-manuals-api	https://docs.publishing.service.gov.uk/apps/hmrc-manuals-api.html	https://github.com/alphagov/hmrc-manuals-api	https://sentry.io/govuk/app-hmrc-manuals-api
+mapit	https://docs.publishing.service.gov.uk/apps/mapit.html	https://github.com/alphagov/mapit	https://sentry.io/govuk/app-mapit
+cache-clearing-service	https://docs.publishing.service.gov.uk/apps/cache-clearing-service.html	https://github.com/alphagov/cache-clearing-service	https://sentry.io/govuk/app-cache-clearing-service
+email-alert-service	https://docs.publishing.service.gov.uk/apps/email-alert-service.html	https://github.com/alphagov/email-alert-service	https://sentry.io/govuk/app-email-alert-service
+search-analytics	https://docs.publishing.service.gov.uk/apps/search-analytics.html	https://github.com/alphagov/search-analytics	https://sentry.io/govuk/app-search-analytics
+content-data-api	https://docs.publishing.service.gov.uk/apps/content-data-api.html	https://github.com/alphagov/content-data-api	https://sentry.io/govuk/app-content-data-api
+content-audit-tool	https://docs.publishing.service.gov.uk/apps/content-audit-tool.html	https://github.com/alphagov/content-audit-tool	https://sentry.io/govuk/app-content-audit-tool
+content-data-admin	https://docs.publishing.service.gov.uk/apps/content-data-admin.html	https://github.com/alphagov/content-data-admin	https://sentry.io/govuk/app-content-data-admin
+search-admin	https://docs.publishing.service.gov.uk/apps/search-admin.html	https://github.com/alphagov/search-admin	https://sentry.io/govuk/app-search-admin
+signon	https://docs.publishing.service.gov.uk/apps/signon.html	https://github.com/alphagov/signon	https://sentry.io/govuk/app-signon
+support	https://docs.publishing.service.gov.uk/apps/support.html	https://github.com/alphagov/support	https://sentry.io/govuk/app-support
+authenticating-proxy	https://docs.publishing.service.gov.uk/apps/authenticating-proxy.html	https://github.com/alphagov/authenticating-proxy	https://sentry.io/govuk/app-authenticating-proxy
+release	https://docs.publishing.service.gov.uk/apps/release.html	https://github.com/alphagov/release	https://sentry.io/govuk/app-release
+router	https://docs.publishing.service.gov.uk/apps/router.html	https://github.com/alphagov/router	https://sentry.io/govuk/app-router
+calculators	https://docs.publishing.service.gov.uk/apps/calculators.html	https://github.com/alphagov/calculators	https://sentry.io/govuk/app-calculators
+calendars	https://docs.publishing.service.gov.uk/apps/calendars.html	https://github.com/alphagov/calendars	https://sentry.io/govuk/app-calendars
+collections	https://docs.publishing.service.gov.uk/apps/collections.html	https://github.com/alphagov/collections	https://sentry.io/govuk/app-collections
+email-alert-frontend	https://docs.publishing.service.gov.uk/apps/email-alert-frontend.html	https://github.com/alphagov/email-alert-frontend	https://sentry.io/govuk/app-email-alert-frontend
+feedback	https://docs.publishing.service.gov.uk/apps/feedback.html	https://github.com/alphagov/feedback	https://sentry.io/govuk/app-feedback
+finder-frontend	https://docs.publishing.service.gov.uk/apps/finder-frontend.html	https://github.com/alphagov/finder-frontend	https://sentry.io/govuk/app-finder-frontend
+frontend	https://docs.publishing.service.gov.uk/apps/frontend.html	https://github.com/alphagov/frontend	https://sentry.io/govuk/app-frontend
+government-frontend	https://docs.publishing.service.gov.uk/apps/government-frontend.html	https://github.com/alphagov/government-frontend	https://sentry.io/govuk/app-government-frontend
+info-frontend	https://docs.publishing.service.gov.uk/apps/info-frontend.html	https://github.com/alphagov/info-frontend	https://sentry.io/govuk/app-info-frontend
+licence-finder	https://docs.publishing.service.gov.uk/apps/licence-finder.html	https://github.com/alphagov/licence-finder	https://sentry.io/govuk/app-licence-finder
+manuals-frontend	https://docs.publishing.service.gov.uk/apps/manuals-frontend.html	https://github.com/alphagov/manuals-frontend	https://sentry.io/govuk/app-manuals-frontend
+smart-answers	https://docs.publishing.service.gov.uk/apps/smart-answers.html	https://github.com/alphagov/smart-answers	https://sentry.io/govuk/app-smart-answers
+service-manual-frontend	https://docs.publishing.service.gov.uk/apps/service-manual-frontend.html	https://github.com/alphagov/service-manual-frontend	https://sentry.io/govuk/app-service-manual-frontend
+static	https://docs.publishing.service.gov.uk/apps/static.html	https://github.com/alphagov/static	https://sentry.io/govuk/app-static
+bouncer	https://docs.publishing.service.gov.uk/apps/bouncer.html	https://github.com/alphagov/bouncer	https://sentry.io/govuk/app-bouncer
+transition	https://docs.publishing.service.gov.uk/apps/transition.html	https://github.com/alphagov/transition	https://sentry.io/govuk/app-transition
+datagovuk_find	https://docs.publishing.service.gov.uk/apps/datagovuk_find.html	https://github.com/alphagov/datagovuk_find	https://sentry.io/govuk/find-data
+datagovuk_publish	https://docs.publishing.service.gov.uk/apps/datagovuk_publish.html	https://github.com/alphagov/datagovuk_publish	https://sentry.io/govuk/publish-data
+ckanext-datagovuk	https://docs.publishing.service.gov.uk/apps/ckanext-datagovuk.html	https://github.com/alphagov/ckanext-datagovuk	
+datagovuk_reference	https://docs.publishing.service.gov.uk/apps/datagovuk_reference.html	https://github.com/alphagov/datagovuk_reference	
+licensify	https://docs.publishing.service.gov.uk/apps/licensify.html	https://github.com/alphagov/licensify	
+seal	https://docs.publishing.service.gov.uk/apps/seal.html	https://github.com/alphagov/seal	
+govuk-alert-tracker	https://docs.publishing.service.gov.uk/apps/govuk-alert-tracker.html	https://github.com/alphagov/govuk-alert-tracker	
+govuk-content-store-examples	https://docs.publishing.service.gov.uk/apps/govuk-content-store-examples.html	https://github.com/alphagov/govuk-content-schemas	
+govuk-display-screen	https://docs.publishing.service.gov.uk/apps/govuk-display-screen.html	https://github.com/alphagov/govuk-display-screen	
+govuk-dependencies	https://docs.publishing.service.gov.uk/apps/govuk-dependencies.html	https://github.com/alphagov/govuk-dependencies	
+govuk-zendesk-display-screen	https://docs.publishing.service.gov.uk/apps/govuk-zendesk-display-screen.html	https://github.com/alphagov/govuk-zendesk-display-screen	
+govuk-secondline-blinken	https://docs.publishing.service.gov.uk/apps/govuk-secondline-blinken.html	https://github.com/alphagov/blinkenjs	
+side-by-side-browser	https://docs.publishing.service.gov.uk/apps/side-by-side-browser.html	https://github.com/alphagov/side-by-side-browser	
+tech-docs-monitor	https://docs.publishing.service.gov.uk/apps/tech-docs-monitor.html	https://github.com/alphagov/tech-docs-monitor	
+govuk-pact-broker	https://docs.publishing.service.gov.uk/apps/govuk-pact-broker.html	https://github.com/alphagov/govuk-pact-broker	
+specialist-frontend	https://docs.publishing.service.gov.uk/apps/specialist-frontend.html	https://github.com/alphagov/specialist-frontend	https://sentry.io/govuk/app-specialist-frontend
+contacts-frontend	https://docs.publishing.service.gov.uk/apps/contacts-frontend.html	https://github.com/alphagov/contacts-frontend	https://sentry.io/govuk/app-contacts-frontend
+multipage-frontend	https://docs.publishing.service.gov.uk/apps/multipage-frontend.html	https://github.com/alphagov/multipage-frontend	https://sentry.io/govuk/app-multipage-frontend
+design-principles	https://docs.publishing.service.gov.uk/apps/design-principles.html	https://github.com/alphagov/design-principles	https://sentry.io/govuk/app-design-principles
+organisations-publisher	https://docs.publishing.service.gov.uk/apps/organisations-publisher.html	https://github.com/alphagov/organisations-publisher	https://sentry.io/govuk/app-organisations-publisher
+panopticon	https://docs.publishing.service.gov.uk/apps/panopticon.html	https://github.com/alphagov/panopticon	https://sentry.io/govuk/app-panopticon
+policy-publisher	https://docs.publishing.service.gov.uk/apps/policy-publisher.html	https://github.com/alphagov/policy-publisher	https://sentry.io/govuk/app-policy-publisher
+business-support-api	https://docs.publishing.service.gov.uk/apps/business-support-api.html	https://github.com/alphagov/business-support-api	https://sentry.io/govuk/app-business-support-api
+govuk-delivery	https://docs.publishing.service.gov.uk/apps/govuk-delivery.html	https://github.com/alphagov/govuk-delivery	https://sentry.io/govuk/app-govuk-delivery
+govuk_content_api	https://docs.publishing.service.gov.uk/apps/govuk_content_api.html	https://github.com/alphagov/govuk_content_api	https://sentry.io/govuk/app-govuk_content_api
+govuk_need_api	https://docs.publishing.service.gov.uk/apps/govuk_need_api.html	https://github.com/alphagov/govuk_need_api	https://sentry.io/govuk/app-govuk_need_api
+metadata-api	https://docs.publishing.service.gov.uk/apps/metadata-api.html	https://github.com/alphagov/metadata-api	https://sentry.io/govuk/app-metadata-api
+business-support-finder	https://docs.publishing.service.gov.uk/apps/business-support-finder.html	https://github.com/alphagov/business-support-finder	https://sentry.io/govuk/app-business-support-finder

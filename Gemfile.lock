@@ -1,6 +1,8 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    activemodel (5.0.7.2)
+      activesupport (= 5.0.7.2)
     activesupport (5.0.7.2)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 0.7, < 2)
@@ -53,6 +55,8 @@ GEM
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
     erubis (2.7.0)
+    ethon (0.12.0)
+      ffi (>= 1.3.0)
     eventmachine (1.2.7)
     execjs (2.7.0)
     faraday (0.15.4)
@@ -61,6 +65,9 @@ GEM
       faraday (~> 0.8)
     faraday_middleware (0.13.1)
       faraday (>= 0.7.4, < 1.0)
+    faraday_middleware-multi_json (0.0.6)
+      faraday_middleware
+      multi_json
     fast_blank (1.0.0)
     fastimage (2.1.5)
     ffi (1.11.1)
@@ -97,6 +104,7 @@ GEM
       activesupport (>= 2)
       nokogiri (>= 1.4)
     http_parser.rb (0.6.0)
+    httpclient (2.8.3)
     i18n (0.9.5)
       concurrent-ruby (~> 1.0)
     jaro_winkler (1.5.3)
@@ -168,12 +176,30 @@ GEM
     minitest (5.11.3)
     multi_json (1.13.1)
     multipart-post (2.1.1)
+    neo4j (9.6.0)
+      activemodel (>= 4.0)
+      activesupport (>= 4.0)
+      i18n (!= 1.3.0)
+      neo4j-core (>= 9.0.0)
+      orm_adapter (~> 0.5.0)
+    neo4j-core (9.0.0)
+      activesupport (>= 4.0)
+      faraday (>= 0.9.0)
+      faraday_middleware (>= 0.10.0)
+      faraday_middleware-multi_json
+      httpclient
+      json
+      multi_json
+      net_tcp_client (>= 2.0.1)
+      typhoeus (>= 1.1.2)
+    net_tcp_client (2.2.0)
     nokogiri (1.10.4)
       mini_portile2 (~> 2.4.0)
     octokit (4.14.0)
       sawyer (~> 0.8.0, >= 0.5.3)
     openapi3_parser (0.5.2)
       commonmarker (~> 0.17)
+    orm_adapter (0.5.0)
     padrino-helpers (0.13.3.4)
       i18n (~> 0.6, >= 0.6.7)
       padrino-support (= 0.13.3.4)
@@ -254,6 +280,8 @@ GEM
     thor (0.20.3)
     thread_safe (0.3.6)
     tilt (2.0.9)
+    typhoeus (1.3.1)
+      ethon (>= 0.9.0)
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
     uglifier (3.2.0)
@@ -281,6 +309,7 @@ DEPENDENCIES
   html-pipeline (~> 2.5.0)
   middleman (~> 4.3.5)
   middleman-search_engine_sitemap (~> 1.4)
+  neo4j (~> 9.6.0)
   octokit (~> 4.14.0)
   rack-contrib (~> 2.1.0)
   rake
