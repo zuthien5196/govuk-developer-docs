@@ -23,6 +23,8 @@ to our AWS environments.
 
 You can find which class of user you are [infra-security project in govuk-aws-data](https://github.com/alphagov/govuk-aws-data/tree/master/data/infra-security).
 
+Also check that you are either connected to the internet via the GDS VPN, or that you are directly connected to the office wifi ( if you are just connected to Gov Wifi you won't be able to connect to Jenkins or deploy any terraform).  
+
 ## Deploying on Jenkins
 
 > **This is not the recommended approach.**
