@@ -28,11 +28,7 @@ Follow the following steps on the Postgresql standby machine:
    ```
 
 2. Follow the steps in this [doc](/manual/postgresql-backups.html#wal-e-failing-with-errors-about-gpg) to remove the password from the GPG key so that the WAL-E restoration process
-can automatically decrypt the backups from S3.
-
-   The passphrase is in the pass store of the GOV.UK secrets under:
-   `postgresql-backups/<environment>/postgresql-primary`
-   where `<environment>` is the GOV.UK environment where you are doing the restoration.
+can automatically decrypt the backups from S3. The passphrase is in the pass store of the GOV.UK secrets under: `postgresql-backups/<environment>/postgresql-primary` where `<environment>` is the GOV.UK environment where you are doing the restoration.
 
 3. Edit the file `/var/lib/postgresql/9.3/main/recovery.conf` by appending the
    following line:
