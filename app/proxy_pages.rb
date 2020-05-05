@@ -32,7 +32,8 @@ class ProxyPages
         url: "/content-schemas/#{schema_name}.html",
         template: "templates/schema_template.html",
         frontmatter: {
-          # title: "Schema: #{schema.schema_name}", # FIXME - this slows down the search index too much
+          title: "Schema: #{schema.schema_name}",
+          content: "",
           locals: {
             title: "Schema: #{schema.schema_name}",
             description: "Everything about the '#{schema.schema_name}' schema",
@@ -81,6 +82,7 @@ class ProxyPages
         template: "templates/document_type_template.html",
         frontmatter: {
           title: "Document type: #{document_type.name}",
+          content: "",
           locals: {
             title: "Document type: #{document_type.name}",
             description: "Everything about the '#{document_type.name}' document type",
@@ -96,6 +98,7 @@ class ProxyPages
       {
         url: "/document-types/#{supertype.id}.html",
         template: "templates/supertype_template.html",
+        content: "",
         frontmatter: {
           title: "#{supertype.name} supertype",
           locals: {
