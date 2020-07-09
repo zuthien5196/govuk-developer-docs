@@ -1,0 +1,1092 @@
+
+<!doctype html>
+<html lang="en" class="govuk-template no-js">
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+    <title>Schema: facet - GOV.UK Developer Documentation</title>
+
+    <link href="/stylesheets/manifest.css" rel="stylesheet" />
+
+    <link rel="canonical" href="https://docs.publishing.service.gov.uk/content-schemas/facet.html">
+
+
+      <meta property="description" content="Everything about the 'facet' schema" />
+      <meta property="og:description" content="Everything about the 'facet' schema" />
+      <meta property="og:image" content="https://docs.publishing.service.gov.uk/images/govuk-large.png" />
+      <meta property="og:site_name" content="GOV.UK Developer Documentation" />
+      <meta property="og:title" content="Schema: facet" />
+      <meta property="og:type" content="object" />
+      <meta property="og:url" content="https://docs.publishing.service.gov.uk/content-schemas/facet.html" />
+      <meta property="twitter:card" content="summary" />
+      <meta property="twitter:domain" content="docs.publishing.service.gov.uk" />
+      <meta property="twitter:image" content="https://docs.publishing.service.gov.uk/images/govuk-large.png" />
+      <meta property="twitter:title" content="Schema: facet - GOV.UK Developer Documentation" />
+      <meta property="twitter:url" content="https://docs.publishing.service.gov.uk/content-schemas/facet.html" />
+
+    
+  </head>
+
+  <body class="govuk-template__body">
+    <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+
+    <div class="app-pane">
+      <div class="app-pane__header toc-open-disabled">
+        <a href="#content" class="govuk-skip-link">Skip to main content</a>
+
+        <header class="govuk-header app-header" role="banner" data-module="govuk-header">
+  <div class="govuk-header__container govuk-header__container--full-width">
+    <div class="govuk-header__logo">
+      <a href="/" class="govuk-header__link govuk-header__link--homepage">
+        <span class="govuk-header__logotype">
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            class="govuk-header__logotype-crown"
+            xmlns="http://www.w3.org/2000/svg"
+            viewbox="0 0 132 97"
+            height="30"
+            width="36"
+          >
+            <path
+              fill="currentColor" fill-rule="evenodd"
+              d="M25 30.2c3.5 1.5 7.7-.2 9.1-3.7 1.5-3.6-.2-7.8-3.9-9.2-3.6-1.4-7.6.3-9.1 3.9-1.4 3.5.3 7.5 3.9 9zM9 39.5c3.6 1.5 7.8-.2 9.2-3.7 1.5-3.6-.2-7.8-3.9-9.1-3.6-1.5-7.6.2-9.1 3.8-1.4 3.5.3 7.5 3.8 9zM4.4 57.2c3.5 1.5 7.7-.2 9.1-3.8 1.5-3.6-.2-7.7-3.9-9.1-3.5-1.5-7.6.3-9.1 3.8-1.4 3.5.3 7.6 3.9 9.1zm38.3-21.4c3.5 1.5 7.7-.2 9.1-3.8 1.5-3.6-.2-7.7-3.9-9.1-3.6-1.5-7.6.3-9.1 3.8-1.3 3.6.4 7.7 3.9 9.1zm64.4-5.6c-3.6 1.5-7.8-.2-9.1-3.7-1.5-3.6.2-7.8 3.8-9.2 3.6-1.4 7.7.3 9.2 3.9 1.3 3.5-.4 7.5-3.9 9zm15.9 9.3c-3.6 1.5-7.7-.2-9.1-3.7-1.5-3.6.2-7.8 3.7-9.1 3.6-1.5 7.7.2 9.2 3.8 1.5 3.5-.3 7.5-3.8 9zm4.7 17.7c-3.6 1.5-7.8-.2-9.2-3.8-1.5-3.6.2-7.7 3.9-9.1 3.6-1.5 7.7.3 9.2 3.8 1.3 3.5-.4 7.6-3.9 9.1zM89.3 35.8c-3.6 1.5-7.8-.2-9.2-3.8-1.4-3.6.2-7.7 3.9-9.1 3.6-1.5 7.7.3 9.2 3.8 1.4 3.6-.3 7.7-3.9 9.1zM69.7 17.7l8.9 4.7V9.3l-8.9 2.8c-.2-.3-.5-.6-.9-.9L72.4 0H59.6l3.5 11.2c-.3.3-.6.5-.9.9l-8.8-2.8v13.1l8.8-4.7c.3.3.6.7.9.9l-5 15.4v.1c-.2.8-.4 1.6-.4 2.4 0 4.1 3.1 7.5 7 8.1h.2c.3 0 .7.1 1 .1.4 0 .7 0 1-.1h.2c4-.6 7.1-4.1 7.1-8.1 0-.8-.1-1.7-.4-2.4V34l-5.1-15.4c.4-.2.7-.6 1-.9zM66 92.8c16.9 0 32.8 1.1 47.1 3.2 4-16.9 8.9-26.7 14-33.5l-9.6-3.4c1 4.9 1.1 7.2 0 10.2-1.5-1.4-3-4.3-4.2-8.7L108.6 76c2.8-2 5-3.2 7.5-3.3-4.4 9.4-10 11.9-13.6 11.2-4.3-.8-6.3-4.6-5.6-7.9 1-4.7 5.7-5.9 8-.5 4.3-8.7-3-11.4-7.6-8.8 7.1-7.2 7.9-13.5 2.1-21.1-8 6.1-8.1 12.3-4.5 20.8-4.7-5.4-12.1-2.5-9.5 6.2 3.4-5.2 7.9-2 7.2 3.1-.6 4.3-6.4 7.8-13.5 7.2-10.3-.9-10.9-8-11.2-13.8 2.5-.5 7.1 1.8 11 7.3L80.2 60c-4.1 4.4-8 5.3-12.3 5.4 1.4-4.4 8-11.6 8-11.6H55.5s6.4 7.2 7.9 11.6c-4.2-.1-8-1-12.3-5.4l1.4 16.4c3.9-5.5 8.5-7.7 10.9-7.3-.3 5.8-.9 12.8-11.1 13.8-7.2.6-12.9-2.9-13.5-7.2-.7-5 3.8-8.3 7.1-3.1 2.7-8.7-4.6-11.6-9.4-6.2 3.7-8.5 3.6-14.7-4.6-20.8-5.8 7.6-5 13.9 2.2 21.1-4.7-2.6-11.9.1-7.7 8.8 2.3-5.5 7.1-4.2 8.1.5.7 3.3-1.3 7.1-5.7 7.9-3.5.7-9-1.8-13.5-11.2 2.5.1 4.7 1.3 7.5 3.3l-4.7-15.4c-1.2 4.4-2.7 7.2-4.3 8.7-1.1-3-.9-5.3 0-10.2l-9.5 3.4c5 6.9 9.9 16.7 14 33.5 14.8-2.1 30.8-3.2 47.7-3.2z"
+            ></path>
+            <image src="/assets/images/govuk-logotype-crown.png" xlink:href="" class="govuk-header__logotype-crown-fallback-image" width="36" height="32"></image>
+          </svg>
+          <span class="govuk-header__logotype-text">
+            GOV.UK
+          </span>
+        </span>
+        <span class="govuk-header__product-name">
+          Developer docs
+        </span>
+      </a>
+    </div>
+    <div class="govuk-header__content">
+      <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button>
+      <nav>
+        <ul id="navigation" class="govuk-header__navigation govuk-header__navigation--end" aria-label="Top Level Navigation">
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/">Dashboard</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/manual/get-started.html">Get started</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/apps.html">Apps</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/manual.html">Manual</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/apis.html">APIs</a>
+            </li>
+            <li class="govuk-header__navigation-item govuk-header__navigation-item--active">
+              <a class="govuk-header__link" href="/content-schemas.html">Schemas</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/document-types.html">Document types</a>
+            </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+      </div>
+
+        <div id="toc-heading" class="toc-show fixedsticky">
+          <a href="#toc" class="toc-show__label js-toc-show" aria-controls="toc">
+            Table of contents <span class="toc-show__icon"></span>
+          </a>
+        </div>
+
+      <div class="app-pane__body">
+          <div class="app-pane__toc">
+            <div class="toc" data-module="table-of-contents">
+              <div class="search" data-module="search">
+  <form action="https://www.google.co.uk/search" method="get" role="search">
+    <input type="hidden" name="as_sitesearch" value="https://docs.publishing.service.gov.uk"/>
+    <label class="govuk-label search__label" for="search">
+      Search (via Google)
+    </label>
+    <input class="govuk-input govuk-!-margin-bottom-4" id="search" name="q" type="text" aria-controls="search-results" placeholder="Search">
+  </form>
+  <div id="search-results" class="search-results" aria-hidden="true" role="dialog" aria-labelledby="search-results-title">
+    <div class="search-results__inner">
+      <button class="search-results__close">Close<span class="search-results__close-label"> search results</span></button>
+      <h2 id="search-results-title" class="search-results__title" aria-live="polite">Results</h2>
+      <div class="search-results__content"></div>
+    </div>
+  </div>
+</div>
+
+              <a href="#" class="toc__close js-toc-close" aria-controls="toc" aria-label="Hide table of contents"></a>
+              <nav id="toc" class="js-toc-list toc__list" aria-labelledby="toc-heading">
+                  <ul>
+    <li>
+      <a href="/content-schemas.html"><span>Content schemas</span></a>
+      <ul>
+          <li>
+            <a href="/content-schemas/answer.html"><span>answer</span></a>
+          </li>
+          <li>
+            <a href="/content-schemas/calendar.html"><span>calendar</span></a>
+          </li>
+          <li>
+            <a href="/content-schemas/case_study.html"><span>case_study</span></a>
+          </li>
+          <li>
+            <a href="/content-schemas/coming_soon.html"><span>coming_soon</span></a>
+          </li>
+          <li>
+            <a href="/content-schemas/completed_transaction.html"><span>completed_transaction</span></a>
+          </li>
+          <li>
+            <a href="/content-schemas/consultation.html"><span>consultation</span></a>
+          </li>
+          <li>
+            <a href="/content-schemas/contact.html"><span>contact</span></a>
+          </li>
+          <li>
+            <a href="/content-schemas/coronavirus_landing_page.html"><span>coronavirus_landing_page</span></a>
+          </li>
+          <li>
+            <a href="/content-schemas/corporate_information_page.html"><span>corporate_information_page</span></a>
+          </li>
+          <li>
+            <a href="/content-schemas/detailed_guide.html"><span>detailed_guide</span></a>
+          </li>
+          <li>
+            <a href="/content-schemas/document_collection.html"><span>document_collection</span></a>
+          </li>
+          <li>
+            <a href="/content-schemas/email_alert_signup.html"><span>email_alert_signup</span></a>
+          </li>
+          <li>
+            <a href="/content-schemas/external_content.html"><span>external_content</span></a>
+          </li>
+          <li>
+            <a href="/content-schemas/facet.html" class="toc-link--in-view"><span>facet</span></a>
+              <ul>
+                <li><a href="#frontend-schema">Frontend schema</a>
+                <li><a href="#publisher-content-schema">Publisher content schema</a>
+                <li><a href="#publisher-links-schema">Publisher links schema</a>
+              </ul>
+          </li>
+          <li>
+            <a href="/content-schemas/facet_group.html"><span>facet_group</span></a>
+          </li>
+          <li>
+            <a href="/content-schemas/facet_value.html"><span>facet_value</span></a>
+          </li>
+          <li>
+            <a href="/content-schemas/fatality_notice.html"><span>fatality_notice</span></a>
+          </li>
+          <li>
+            <a href="/content-schemas/finder.html"><span>finder</span></a>
+          </li>
+          <li>
+            <a href="/content-schemas/finder_email_signup.html"><span>finder_email_signup</span></a>
+          </li>
+          <li>
+            <a href="/content-schemas/generic.html"><span>generic</span></a>
+          </li>
+          <li>
+            <a href="/content-schemas/generic_with_external_related_links.html"><span>generic_with_external_related_links</span></a>
+          </li>
+          <li>
+            <a href="/content-schemas/gone.html"><span>gone</span></a>
+          </li>
+          <li>
+            <a href="/content-schemas/government.html"><span>government</span></a>
+          </li>
+          <li>
+            <a href="/content-schemas/guide.html"><span>guide</span></a>
+          </li>
+          <li>
+            <a href="/content-schemas/help_page.html"><span>help_page</span></a>
+          </li>
+          <li>
+            <a href="/content-schemas/history.html"><span>history</span></a>
+          </li>
+          <li>
+            <a href="/content-schemas/hmrc_manual.html"><span>hmrc_manual</span></a>
+          </li>
+          <li>
+            <a href="/content-schemas/hmrc_manual_section.html"><span>hmrc_manual_section</span></a>
+          </li>
+          <li>
+            <a href="/content-schemas/homepage.html"><span>homepage</span></a>
+          </li>
+          <li>
+            <a href="/content-schemas/html_publication.html"><span>html_publication</span></a>
+          </li>
+          <li>
+            <a href="/content-schemas/knowledge_alpha.html"><span>knowledge_alpha</span></a>
+          </li>
+          <li>
+            <a href="/content-schemas/licence.html"><span>licence</span></a>
+          </li>
+          <li>
+            <a href="/content-schemas/local_transaction.html"><span>local_transaction</span></a>
+          </li>
+          <li>
+            <a href="/content-schemas/mainstream_browse_page.html"><span>mainstream_browse_page</span></a>
+          </li>
+          <li>
+            <a href="/content-schemas/manual.html"><span>manual</span></a>
+          </li>
+          <li>
+            <a href="/content-schemas/manual_section.html"><span>manual_section</span></a>
+          </li>
+          <li>
+            <a href="/content-schemas/ministers_index.html"><span>ministers_index</span></a>
+          </li>
+          <li>
+            <a href="/content-schemas/need.html"><span>need</span></a>
+          </li>
+          <li>
+            <a href="/content-schemas/news_article.html"><span>news_article</span></a>
+          </li>
+          <li>
+            <a href="/content-schemas/organisation.html"><span>organisation</span></a>
+          </li>
+          <li>
+            <a href="/content-schemas/organisations_homepage.html"><span>organisations_homepage</span></a>
+          </li>
+          <li>
+            <a href="/content-schemas/person.html"><span>person</span></a>
+          </li>
+          <li>
+            <a href="/content-schemas/place.html"><span>place</span></a>
+          </li>
+          <li>
+            <a href="/content-schemas/placeholder.html"><span>placeholder</span></a>
+          </li>
+          <li>
+            <a href="/content-schemas/publication.html"><span>publication</span></a>
+          </li>
+          <li>
+            <a href="/content-schemas/redirect.html"><span>redirect</span></a>
+          </li>
+          <li>
+            <a href="/content-schemas/role.html"><span>role</span></a>
+          </li>
+          <li>
+            <a href="/content-schemas/role_appointment.html"><span>role_appointment</span></a>
+          </li>
+          <li>
+            <a href="/content-schemas/service_manual_guide.html"><span>service_manual_guide</span></a>
+          </li>
+          <li>
+            <a href="/content-schemas/service_manual_homepage.html"><span>service_manual_homepage</span></a>
+          </li>
+          <li>
+            <a href="/content-schemas/service_manual_service_standard.html"><span>service_manual_service_standard</span></a>
+          </li>
+          <li>
+            <a href="/content-schemas/service_manual_service_toolkit.html"><span>service_manual_service_toolkit</span></a>
+          </li>
+          <li>
+            <a href="/content-schemas/service_manual_topic.html"><span>service_manual_topic</span></a>
+          </li>
+          <li>
+            <a href="/content-schemas/service_sign_in.html"><span>service_sign_in</span></a>
+          </li>
+          <li>
+            <a href="/content-schemas/simple_smart_answer.html"><span>simple_smart_answer</span></a>
+          </li>
+          <li>
+            <a href="/content-schemas/special_route.html"><span>special_route</span></a>
+          </li>
+          <li>
+            <a href="/content-schemas/specialist_document.html"><span>specialist_document</span></a>
+          </li>
+          <li>
+            <a href="/content-schemas/speech.html"><span>speech</span></a>
+          </li>
+          <li>
+            <a href="/content-schemas/statistical_data_set.html"><span>statistical_data_set</span></a>
+          </li>
+          <li>
+            <a href="/content-schemas/statistics_announcement.html"><span>statistics_announcement</span></a>
+          </li>
+          <li>
+            <a href="/content-schemas/step_by_step_nav.html"><span>step_by_step_nav</span></a>
+          </li>
+          <li>
+            <a href="/content-schemas/take_part.html"><span>take_part</span></a>
+          </li>
+          <li>
+            <a href="/content-schemas/taxon.html"><span>taxon</span></a>
+          </li>
+          <li>
+            <a href="/content-schemas/topic.html"><span>topic</span></a>
+          </li>
+          <li>
+            <a href="/content-schemas/topical_event_about_page.html"><span>topical_event_about_page</span></a>
+          </li>
+          <li>
+            <a href="/content-schemas/transaction.html"><span>transaction</span></a>
+          </li>
+          <li>
+            <a href="/content-schemas/travel_advice.html"><span>travel_advice</span></a>
+          </li>
+          <li>
+            <a href="/content-schemas/travel_advice_index.html"><span>travel_advice_index</span></a>
+          </li>
+          <li>
+            <a href="/content-schemas/unpublishing.html"><span>unpublishing</span></a>
+          </li>
+          <li>
+            <a href="/content-schemas/vanish.html"><span>vanish</span></a>
+          </li>
+          <li>
+            <a href="/content-schemas/working_group.html"><span>working_group</span></a>
+          </li>
+          <li>
+            <a href="/content-schemas/world_location.html"><span>world_location</span></a>
+          </li>
+          <li>
+            <a href="/content-schemas/world_location_news_article.html"><span>world_location_news_article</span></a>
+          </li>
+      </ul>
+    </li>
+  </ul>
+
+              </nav>
+            </div>
+          </div>
+
+        <div class="app-pane__content toc-open-disabled">
+          <main id="content" class="technical-documentation" data-module="anchored-headings">
+              <h1 class="page-title">Schema: facet</h1>
+
+
+  <h2 id='frontend-schema'>Frontend schema</h2><p>This schema describes the content item that is returned from the
+<a href="https://github.com/alphagov/content-store">content store</a>.</p>
+
+<table class='schema-table'><tr><td><strong>analytics_identifier</strong><br/><code>string</code> or <code>null</code></td> <td>A short identifier we send to Google Analytics for multi-valued fields. This means we avoid the truncated values we would get if we sent the path or slug of eg organisations.<br/></td></tr>
+<tr><td><strong>base_path</strong><br/><code>string</code></td> <td>A path only. Query string and/or fragment are not allowed.<br/></td></tr>
+<tr><td><strong>content_id</strong><br/><code>string</code></td> <td><br/></td></tr>
+<tr><td><strong>description</strong><br/><code></code> or <code>null</code></td> <td><br/></td></tr>
+<tr><td><strong>details</strong><br/><code>object</code></td> <td><table class='schema-table'><tr><td><strong>change_history</strong><br/><code>array</code></td> <td><br/></td></tr>
+<tr><td><strong>closed_value</strong><br/></td> <td>Value that determines the closed state (the key field is in the past) of a topical facet.<br/></td></tr>
+<tr><td><strong>combine_mode</strong><br/><code>string</code></td> <td>Specifies how to combine with other facets<br/>Allowed values: <code>and</code>, <code>or</code></td></tr>
+<tr><td><strong>display_as_result_metadata</strong><br/><code>boolean</code></td> <td>Include this in search result metadata. Can be set for non-filterable facets.<br/></td></tr>
+<tr><td><strong>filter_key</strong><br/><code>string</code></td> <td>The exact rummager field name for this facet. Allows &lsquo;key&rsquo; to be aliased to a rummager filter field<br/></td></tr>
+<tr><td><strong>filter_value</strong><br/><code>string</code></td> <td>A preset filter value that is applied when a checkbox is selected<br/></td></tr>
+<tr><td><strong>filterable</strong><br/><code>boolean</code></td> <td>This must be true to show the facet to users.<br/></td></tr>
+<tr><td><strong>key</strong><br/><code>string</code></td> <td>The rummager field name used for this facet.<br/></td></tr>
+<tr><td><strong>keys</strong><br/><code>array</code></td> <td>Field names used for the taxon drop down.<br/></td></tr>
+<tr><td><strong>name</strong><br/><code>string</code></td> <td>Label for the facet.<br/></td></tr>
+<tr><td><strong>open_value</strong><br/></td> <td>Value that determines the open state (the key field is in the future) of a topical facet.<br/></td></tr>
+<tr><td><strong>preposition</strong><br/><code>string</code></td> <td>Text used to augment the description of the search when the facet is used.<br/></td></tr>
+<tr><td><strong>short_name</strong><br/><code>string</code></td> <td><br/></td></tr>
+<tr><td><strong>type</strong><br/><code>string</code></td> <td>Defines the UI component and how the facet is queried from the search API<br/>Allowed values: <code>autocomplete</code>, <code>checkbox</code>, <code>content_id</code>, <code>date</code>, <code>hidden</code>, <code>taxon</code>, <code>text</code>, <code>topical</code></td></tr></table></td></tr>
+<tr><td><strong>document_type</strong><br/><code>string</code></td> <td><br/>Allowed values: <code>facet</code></td></tr>
+<tr><td><strong>first_published_at</strong><br/><code></code> or <code>null</code></td> <td><br/></td></tr>
+<tr><td><strong>links</strong><br/><code>object</code></td> <td><table class='schema-table'><tr><td><strong>available_translations</strong><br/></td> <td>Link type automatically added by Publishing API<br/></td></tr>
+<tr><td><strong>child_taxons</strong><br/></td> <td>Link type automatically added by Publishing API<br/></td></tr>
+<tr><td><strong>children</strong><br/></td> <td>Link type automatically added by Publishing API<br/></td></tr>
+<tr><td><strong>document_collections</strong><br/></td> <td>Link type automatically added by Publishing API<br/></td></tr>
+<tr><td><strong>facet_values</strong><br/></td> <td>Possible facet_values to show for non-dynamic select facets. All values are shown regardless of the search.<br/></td></tr>
+<tr><td><strong>level_one_taxons</strong><br/></td> <td>Link type automatically added by Publishing API<br/></td></tr>
+<tr><td><strong>ministers</strong><br/></td> <td>Link type automatically added by Publishing API<br/></td></tr>
+<tr><td><strong>parent</strong><br/></td> <td>The facet_group this facet belongs to.<br/></td></tr>
+<tr><td><strong>part_of_step_navs</strong><br/></td> <td>Link type automatically added by Publishing API<br/></td></tr>
+<tr><td><strong>policies</strong><br/></td> <td>Link type automatically added by Publishing API<br/></td></tr>
+<tr><td><strong>policy_areas</strong><br/></td> <td>A largely deprecated tag currently only used to power email alerts.<br/></td></tr>
+<tr><td><strong>related_to_step_navs</strong><br/></td> <td>Link type automatically added by Publishing API<br/></td></tr>
+<tr><td><strong>role_appointments</strong><br/></td> <td>Link type automatically added by Publishing API<br/></td></tr>
+<tr><td><strong>secondary_to_step_navs</strong><br/></td> <td>Link type automatically added by Publishing API<br/></td></tr>
+<tr><td><strong>topic_taxonomy_taxons</strong><br/></td> <td>Link type automatically added by Publishing API<br/></td></tr></table></td></tr>
+<tr><td><strong>locale</strong><br/><code>string</code></td> <td><br/>Allowed values: <code>ar</code>, <code>az</code>, <code>be</code>, <code>bg</code>, <code>bn</code>, <code>cs</code>, <code>cy</code>, <code>da</code>, <code>de</code>, <code>dr</code>, <code>el</code>, <code>en</code>, <code>es</code>, <code>es-419</code>, <code>et</code>, <code>fa</code>, <code>fi</code>, <code>fr</code>, <code>gd</code>, <code>he</code>, <code>hi</code>, <code>hr</code>, <code>hu</code>, <code>hy</code>, <code>id</code>, <code>is</code>, <code>it</code>, <code>ja</code>, <code>ka</code>, <code>kk</code>, <code>ko</code>, <code>lt</code>, <code>lv</code>, <code>ms</code>, <code>mt</code>, <code>nl</code>, <code>no</code>, <code>pl</code>, <code>ps</code>, <code>pt</code>, <code>ro</code>, <code>ru</code>, <code>si</code>, <code>sk</code>, <code>sl</code>, <code>so</code>, <code>sq</code>, <code>sr</code>, <code>sv</code>, <code>sw</code>, <code>ta</code>, <code>th</code>, <code>tk</code>, <code>tr</code>, <code>uk</code>, <code>ur</code>, <code>uz</code>, <code>vi</code>, <code>zh</code>, <code>zh-hk</code>, <code>zh-tw</code></td></tr>
+<tr><td><strong>need_ids</strong><br/><code>array</code></td> <td><br/></td></tr>
+<tr><td><strong>phase</strong><br/><code>string</code></td> <td>The service design phase of this content item - https://www.gov.uk/service-manual/phases<br/>Allowed values: <code>alpha</code>, <code>beta</code>, <code>live</code></td></tr>
+<tr><td><strong>public_updated_at</strong><br/><code></code> or <code>null</code></td> <td><br/></td></tr>
+<tr><td><strong>publishing_app</strong><br/><code>string</code></td> <td>The application that published this item.<br/>Allowed values: <code>calculators</code>, <code>calendars</code>, <code>collections-publisher</code>, <code>contacts</code>, <code>content-publisher</code>, <code>content-tagger</code>, <code>email-alert-frontend</code>, <code>external-link-tracker</code>, <code>feedback</code>, <code>frontend</code>, <code>government-frontend</code>, <code>hmrc-manuals-api</code>, <code>info-frontend</code>, <code>licencefinder</code>, <code>local-links-manager</code>, <code>manuals-frontend</code>, <code>manuals-publisher</code>, <code>maslow</code>, <code>performanceplatform-big-screen-view</code>, <code>publisher</code>, <code>rummager</code>, <code>search-admin</code>, <code>search-api</code>, <code>service-manual-publisher</code>, <code>share-sale-publisher</code>, <code>short-url-manager</code>, <code>smartanswers</code>, <code>special-route-publisher</code>, <code>specialist-publisher</code>, <code>static</code>, <code>tariff</code>, <code>travel-advice-publisher</code>, <code>whitehall</code></td></tr>
+<tr><td><strong>publishing_request_id</strong><br/></td> <td>A unique identifier used to track publishing requests to rendered content<br/></td></tr>
+<tr><td><strong>publishing_scheduled_at</strong><br/><code></code> or <code>null</code></td> <td><br/></td></tr>
+<tr><td><strong>rendering_app</strong><br/><code></code> or <code>null</code></td> <td><br/></td></tr>
+<tr><td><strong>scheduled_publishing_delay_seconds</strong><br/><code></code> or <code>null</code></td> <td><br/></td></tr>
+<tr><td><strong>schema_name</strong><br/><code>string</code></td> <td><br/>Allowed values: <code>facet</code></td></tr>
+<tr><td><strong>title</strong><br/><code>string</code></td> <td><br/></td></tr>
+<tr><td><strong>updated_at</strong><br/><code>string</code></td> <td><br/></td></tr>
+<tr><td><strong>withdrawn_notice</strong><br/><code>object</code></td> <td><table class='schema-table'><tr><td><strong>explanation</strong><br/><code>string</code></td> <td><br/></td></tr>
+<tr><td><strong>withdrawn_at</strong><br/></td> <td><br/></td></tr></table></td></tr></table>
+<p><a href="https://github.com/alphagov/govuk-content-schemas/blob/master/dist/formats/facet/frontend/schema.json">View this schema on GitHub</a></p>
+<h3 id='random-example'>Random example</h3><div class="highlight"><pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"analytics_identifier"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"base_path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/f490341d-b0b8-4ee8-a5d8-1f9cfb6fc478"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"content_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"e8cf952d-692d-465c-bc60-0842f4481c15"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"turpis dolor Quisque Mauris ipsum Nam et imperdiet lorem sit a massa risus volutpat dolor orci egestas. amet, nibh suscipit Ut risus Sed leo Suspendisse aliquet. tristique molestie at Nam sagittis Pellentesque sollicitudin netus ac sem interdum. molestie in, non et cursus nisl vel eu interdum. morbi scelerisque. senectus tempor Duis vestibulum. ac libero. hendrerit, sed mauris ac tempor ac tristique eu nibh. eros. malesuada est. finibus, Lorem Aenean consectetur Ut vel elit. porttitor bibendum. habitant purus non lectus pellentesque adipiscing ultricies fames"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"details"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"closed_value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"libero. habitant sed molestie malesuada turpis Mauris mauris dolor ultricies vestibulum. ac lectus et eu porttitor interdum. ac Lorem sollicitudin Ut Aenean tristique sem risus consectetur elit. finibus, tristique et imperdiet aliquet. scelerisque. hendrerit, non adipiscing Suspendisse nisl est. molestie Pellentesque ac dolor tempor ipsum bibendum. cursus Sed eu"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"filter_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"purus non interdum. molestie Sed hendrerit, volutpat in, nibh. libero. ultricies ac sed sem dolor Pellentesque a vel Lorem nisl ipsum netus et Nam leo Duis morbi ac habitant elit. imperdiet interdum. suscipit at sollicitudin egestas. sagittis Aenean Mauris nibh non ac sit tristique fames risus tempor massa scelerisque. aliquet. Nam vel consectetur pellentesque lorem dolor bibendum. porttitor finibus, Quisque amet, eu eu Ut tempor vestibulum. Ut"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"filterable"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Mauris risus Nam ac nibh. tristique tristique tempor sed eu bibendum. volutpat nibh egestas. turpis finibus, netus pellentesque imperdiet lectus orci mauris elit. non a cursus leo vel fames sollicitudin sem scelerisque. sagittis consectetur Suspendisse est. Duis senectus in, ultricies tempor eros. adipiscing eu suscipit Nam Sed Ut interdum. at molestie ac ac"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Quisque in, dolor tempor at finibus, Suspendisse fames adipiscing risus imperdiet ac amet, ultricies Ut suscipit nisl habitant molestie tempor purus interdum. bibendum. sem vel egestas. sit sed senectus tristique Duis Mauris non non malesuada interdum. libero. ac lorem Lorem consectetur elit. Aenean a Pellentesque eu turpis eu ac risus nibh. mauris et Ut Nam netus aliquet."</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"short_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"senectus egestas. mauris risus adipiscing Aenean sem hendrerit, eros."</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"topical"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"document_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"facet"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"first_published_at"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"children"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"analytics_identifier"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"base_path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/30e875bc-1785-4d18-8df4-465ede66ef2f/62190714-066b-4ac0-94a1-52b2e8f3d1ae"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"content_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2aacb3df-91e8-4d8f-9534-34cd34207aea"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"document_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"egestas. Quisque Duis nisl interdum. ac dolor lectus orci interdum. dolor aliquet. elit. eu Mauris turpis nibh Aenean habitant suscipit morbi volutpat adipiscing sollicitudin leo sit amet, ac Lorem ac risus Ut porttitor ipsum risus Sed eros. ac massa finibus, at tristique Nam non ultricies pellentesque netus tempor vestibulum. Nam scelerisque. vel tristique lorem est. Suspendisse et sem mauris sagittis sed bibendum. fames purus libero. non molestie"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="nl">"locale"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sr"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"public_updated_at"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"schema_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"orci et sed Pellentesque Quisque sagittis ultricies at Lorem tristique hendrerit, senectus molestie nisl tempor fames imperdiet adipiscing molestie in, cursus suscipit finibus, lorem non malesuada tristique mauris eu scelerisque. interdum. nibh. vel egestas. aliquet. lectus leo amet, volutpat libero. dolor ac ac turpis Nam risus risus ac nibh porttitor ipsum sollicitudin est. pellentesque tempor elit. Duis Ut Ut eros. Nam bibendum. vestibulum. dolor eu massa purus Aenean interdum. morbi vel habitant Mauris Sed non consectetur a et sem ac sit Suspendisse netus"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"tristique Aenean Ut fames turpis hendrerit, molestie egestas. volutpat Nam amet, non massa Ut nibh. interdum. Mauris molestie ac senectus est. dolor lectus aliquet. at lorem ac leo bibendum. dolor consectetur interdum. non sed ac et netus mauris Nam habitant orci eu adipiscing sit Sed sem elit. sollicitudin nibh ultricies a porttitor finibus, ipsum in, Lorem vel tempor Quisque libero. vestibulum. malesuada vel Duis purus eros. risus Suspendisse cursus eu tempor sagittis morbi"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"web_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://example.com/03d07591-a853-4743-9c8d-4dd17da0eec0/2f993f82-04dc-43da-a2d7-20b2bd43729a/18fe8d68-2c29-4cd1-8772-062e1db98876#b7ceb9010393afb3cafe09a102779454"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"api_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://example.com/28972a90-fcc2-4c8c-a1d4-c4a1c24262a8#07d1838c76ecd6bfdbc5ef4b5dd09b25"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"base_path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/b88bcb20-a61c-4a86-8dbf-f2c19dc9dd24"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"content_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"64e43637-a273-459e-bc97-c0bd5e453e49"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"document_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"malesuada orci libero. finibus, elit. aliquet. Nam nibh. ac suscipit nisl dolor leo Sed tristique Ut risus et consectetur ac molestie"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"locale"</span><span class="p">:</span><span class="w"> </span><span class="s2">"bg"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"public_updated_at"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"interdum. vel interdum. Suspendisse ac et ac est. Ut a sem morbi amet, adipiscing volutpat dolor egestas. tristique sagittis molestie senectus ac nibh risus Aenean Quisque cursus Lorem dolor Mauris ac vel Pellentesque aliquet. non Nam eu finibus, tristique tempor lorem consectetur malesuada libero. nibh. turpis fames Ut in, at eu et hendrerit, netus sollicitudin molestie scelerisque. mauris Duis massa bibendum. Nam pellentesque leo sed purus porttitor habitant imperdiet suscipit ultricies eros. tempor elit. risus nisl lectus vestibulum. orci Sed non sit"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="nl">"document_collections"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"api_path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/18bf8aa2-ed45-482e-9452-afbd87bc3b96"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"base_path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/064e9629-b178-4628-ae22-610cae032acf/2bda1658-5551-48b7-9a2b-e72ca687127f/d6a5a883-1561-4275-88a5-6cf929d21c7c/b47c4acb-902a-499e-8608-388a90cde560"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"content_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"372eb6f8-2a1c-48d9-b53a-ec388c2769dc"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"document_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"nisl purus nibh dolor pellentesque eu ac tempor lectus adipiscing et habitant non Nam eu scelerisque. risus tempor sem dolor Quisque hendrerit, volutpat Duis est. Lorem a cursus Ut sollicitudin sit orci eros. Mauris fames molestie risus ipsum finibus, egestas. tristique Pellentesque mauris ac tristique aliquet. netus interdum. Sed in, vel Aenean interdum. turpis lorem massa bibendum. molestie nibh. sed vestibulum. elit."</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="nl">"locale"</span><span class="p">:</span><span class="w"> </span><span class="s2">"es-419"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"schema_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"cursus Mauris tristique eu suscipit Aenean tristique ac dolor a ac elit. consectetur est. Quisque Lorem libero. Ut adipiscing leo Nam risus vestibulum. egestas. lectus porttitor aliquet. molestie dolor pellentesque ac eros. scelerisque. risus molestie senectus orci et turpis vel amet, sit nisl Pellentesque Suspendisse lorem et interdum. sollicitudin vel ac nibh. interdum. tempor hendrerit, eu morbi fames Duis volutpat non purus sed"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Nam ac eros. Ut turpis consectetur nibh. et eu sagittis dolor sem interdum. mauris vel in, Ut aliquet. purus hendrerit, risus Mauris tristique at cursus bibendum. non non Duis senectus Aenean nisl habitant Nam eu ultricies ac fames tempor Lorem amet, interdum. scelerisque. malesuada a adipiscing imperdiet leo orci et dolor"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"web_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://example.com/e7989e1f-a79b-4b4b-8990-5b54a9c3c088/19b6e7c7-d878-428d-8bcd-e99e7d94b13c/e349ff00-aab8-4eb9-85d8-83da5cbc5a95/bb762d83-9abd-4824-b081-80439c917b39#935a268ab9c8f5f8e45e0df56c669951"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"analytics_identifier"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"base_path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/12fa576e-9d1b-45b2-969c-c4b925c7076a"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"content_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"f6884536-3928-47cb-b7c2-19c4ed300700"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"document_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"tempor Nam ac nisl eu malesuada mauris tristique ac consectetur non hendrerit, et elit. ac adipiscing massa netus a suscipit scelerisque. vel Lorem libero. vel ac"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="nl">"locale"</span><span class="p">:</span><span class="w"> </span><span class="s2">"zh-hk"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"nibh. leo ipsum non imperdiet ultricies tempor at Nam Mauris lectus elit. ac vel dolor interdum. Sed Pellentesque mauris cursus scelerisque. sed Ut senectus massa pellentesque molestie nibh"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"base_path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/8625c4a5-6a53-4340-9ae1-1742e3fca470"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"content_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"a650e0b5-a0b5-42c4-a2fa-6cbbb4cfd97b"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="nl">"locale"</span><span class="p">:</span><span class="w"> </span><span class="s2">"gd"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"eu interdum. at leo tristique dolor vel Nam volutpat a interdum. tristique libero. Ut massa Aenean fames sem ac tempor turpis Quisque hendrerit, habitant eros. non lectus egestas. ac Ut nisl Suspendisse Mauris et nibh. Nam in, molestie Lorem ac tempor consectetur senectus Duis"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"web_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://example.com/f387a018-5a20-4a45-a5d9-32edcf0980d1/b9e3bd8a-6514-4be4-8633-180da3072aec/39084a66-f1cc-45ef-a929-8c386408ba93/56a4af1b-023d-474f-be50-529c6b0deaa4#0740d3f199ab58f6bd7d58f869c358a7"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"analytics_identifier"</span><span class="p">:</span><span class="w"> </span><span class="s2">"massa at scelerisque. turpis netus consectetur cursus bibendum. et nisl ipsum ac a vel Nam sit hendrerit, finibus, Quisque interdum. senectus libero. imperdiet habitant Nam tristique fames orci tempor Ut Ut sollicitudin nibh. et non vestibulum. est. molestie eu Duis tristique eros. interdum. Suspendisse aliquet. lorem Mauris egestas. nibh sed in, leo lectus risus purus vel non elit. ac sagittis pellentesque dolor ac amet, risus morbi ac adipiscing dolor Aenean tempor volutpat sem ultricies Pellentesque porttitor eu mauris Lorem malesuada Sed suscipit molestie"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"api_path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/128a9ff4-6b1f-4a65-b63c-03cef8f661a7/d52e6804-b994-4857-8e8f-8d9ad457e894"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"api_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://example.com/1c7995a9-2efa-4e07-9288-cba078ca41de#07d0da7c189f976001b74a2b87b80fec"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"base_path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/5d79ee64-1612-4420-88b2-ebfa13f3f524/e70b69f6-2156-4946-9771-2b9473b4108e/c2ab402c-f9a2-4a89-9944-0f5fe39a316f"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"content_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"3e324b5e-91ed-4d26-9f4f-f00f1172f4a4"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"locale"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ko"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"netus Suspendisse sagittis sit tristique Ut Quisque nibh Nam egestas. sem finibus, bibendum. vel cursus aliquet. non et eros. orci interdum. leo Ut massa nibh. interdum. senectus at lectus sed porttitor eu vestibulum. tempor hendrerit, Pellentesque a scelerisque. Aenean amet, malesuada fames risus vel consectetur dolor adipiscing ac habitant Mauris nisl"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"web_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://example.com/8f49709c-74fb-4e6f-a4ac-968ac5f06cd8/5d40bb2e-71a2-4fdf-b62a-24bd3d15b2f2#17d85717e4f9b910c9ddc0111355af65"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"analytics_identifier"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"api_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://example.com/d9b5e838-4e11-44be-8f6d-4d54f328ee8c/f5216551-d31c-4de1-9226-886ff8820009/d6baef18-e072-4654-aa78-a8b05f5a2aed/6e65fb27-fad0-4f47-8742-f183bb5b0fe1/f29b6fa3-a52b-4ef2-ab31-5e52214fb9fe#4e37e08562e10014269c3268d094451a"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"base_path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/9a5c87be-7bb1-4ac2-a359-f529d526f838"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"content_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"6ddc3e96-9635-4629-8c5b-965c6ecd389a"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"document_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="nl">"locale"</span><span class="p">:</span><span class="w"> </span><span class="s2">"uz"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"schema_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"adipiscing Nam orci"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"a ac lorem Nam ultricies porttitor leo imperdiet vel sit mauris elit. hendrerit, purus malesuada in, et pellentesque cursus tempor sollicitudin netus fames Mauris et molestie dolor"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"analytics_identifier"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"base_path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/7207cdc3-f237-4c35-b79b-0f8f151a0b57/5f4cdb9b-512c-48c4-bcd1-4de139242906/0d448606-d3fa-4e97-9497-ea360e3c57f1/cd6c4dcf-f1e0-4182-b4e5-e54f953ca931"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"content_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"8394a350-88b3-4f83-b289-8d725ad53f71"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"locale"</span><span class="p">:</span><span class="w"> </span><span class="s2">"he"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"senectus leo sit Pellentesque est. Suspendisse egestas. tristique amet, Duis aliquet. ipsum"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="nl">"facet_values"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"base_path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/714f841b-75e5-4061-9caf-2b838b6451c5/9c8f457b-6560-4304-b657-edde484d79ff/b2dc8072-ab41-4d15-ba7f-1ba0029932f2/3c6b174d-35bc-4af9-9e2f-d4f552df67c2"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"content_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"d211037d-16b8-42c9-8d5d-3ddb5eabd838"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"locale"</span><span class="p">:</span><span class="w"> </span><span class="s2">"no"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"public_updated_at"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sit hendrerit, imperdiet lorem dolor lectus sagittis et est. interdum. molestie libero. volutpat ipsum elit. et nibh Duis bibendum. cursus finibus, porttitor nisl risus ac aliquet. ac malesuada tempor orci sem ultricies vestibulum. sollicitudin vel risus"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"web_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://example.com/d3e3b111-32a7-475f-bcfc-f23f2bd4492f/ab010b1d-ea4c-44a3-b98f-1be187c0f060/61ca7871-964a-4c53-ba4e-d440f66d43dd/2fb20fb5-2565-4a8d-ae7f-36999955f73a#63d2a8baa646b987f92afb60f883a503"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"analytics_identifier"</span><span class="p">:</span><span class="w"> </span><span class="s2">"libero. sit Suspendisse mauris est. hendrerit, sem pellentesque non imperdiet elit. massa finibus,"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"api_path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/3eef68b0-5729-47c8-8d1f-64d6b02ffc77/7abf3d13-4c26-4222-b544-5ce32a385e7c/c97aa06d-0c00-4536-a8a4-17ad09f90832/6a3c08c8-7652-45e8-b233-decc59c094c7"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"content_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"334819bd-a7d3-4a43-85e3-85604b124eca"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="nl">"locale"</span><span class="p">:</span><span class="w"> </span><span class="s2">"dr"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"public_updated_at"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"a ipsum Nam ac at leo Suspendisse eu sollicitudin pellentesque molestie sit ultricies consectetur porttitor tristique habitant mauris massa aliquet. Pellentesque Quisque interdum. Nam Lorem fames cursus Mauris ac amet, dolor eros. adipiscing et Sed senectus finibus, morbi vel lorem"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"analytics_identifier"</span><span class="p">:</span><span class="w"> </span><span class="s2">"scelerisque. Aenean a tristique eu libero. sit leo turpis aliquet. dolor risus est. cursus vel nisl Sed sed malesuada mauris ac eu interdum. dolor interdum. lorem volutpat Mauris Pellentesque at amet, ac Ut hendrerit, adipiscing purus netus ipsum Lorem et"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"content_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"171614a5-3291-47a3-a86b-a34b6733fb1c"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"document_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Duis vel morbi finibus, ultricies lectus ac scelerisque. Pellentesque netus purus tristique Quisque tristique Aenean suscipit Ut nibh. amet, nisl eu dolor malesuada et at porttitor hendrerit, vel Lorem massa vestibulum. elit. fames molestie nibh orci eros. Nam Nam a libero. dolor interdum. sollicitudin risus imperdiet et sagittis turpis consectetur cursus egestas. ipsum sed Suspendisse Mauris sit ac molestie risus tempor tempor leo ac pellentesque bibendum. non ac volutpat lorem sem non Sed eu interdum. Ut est. aliquet."</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"locale"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sr"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"interdum. vel tristique pellentesque et cursus in, et porttitor senectus libero. est. hendrerit,"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"api_path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/567afb8f-e167-4890-876a-02915c242cf9"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"content_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"5f8dd8c7-5fe1-4ddd-be36-350118514cff"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"document_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sollicitudin at habitant interdum. Nam lectus volutpat ac a eu Pellentesque vestibulum. sem interdum. libero. cursus finibus, nibh scelerisque. Ut ac elit. Nam ac sagittis Quisque in, nibh. purus senectus mauris hendrerit, ipsum tristique tristique porttitor orci egestas. malesuada eros. Sed nisl Aenean imperdiet risus eu adipiscing amet, vel sed molestie Suspendisse tempor lorem Mauris bibendum. fames dolor sit aliquet. pellentesque Ut vel morbi ac consectetur molestie leo massa est. suscipit dolor risus tempor turpis Duis et Lorem non ultricies non et netus"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="nl">"locale"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ps"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"public_updated_at"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"schema_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"aliquet. interdum. netus fames lorem eu est. risus non Ut egestas. molestie Nam sem molestie interdum. vel orci ac Ut Sed mauris nibh. scelerisque. et tristique et porttitor habitant tempor senectus amet, non leo purus sollicitudin adipiscing at bibendum. nibh risus massa consectetur Suspendisse cursus ipsum pellentesque nisl lectus Lorem malesuada Aenean libero. finibus, sit morbi sagittis tempor dolor ultricies Quisque Nam turpis sed imperdiet ac a ac ac eros. elit. volutpat vestibulum. in, hendrerit, dolor Mauris tristique eu"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"interdum. eu Ut Ut et sollicitudin nibh. ultricies fames mauris interdum. Nam sagittis Sed leo ipsum risus Duis in, purus ac molestie et tempor Quisque libero. at imperdiet senectus porttitor amet, ac tristique tristique hendrerit, a Lorem est. pellentesque scelerisque. aliquet. ac ac massa Pellentesque non consectetur lectus sit eros. malesuada vestibulum. netus orci tempor vel risus sem morbi Mauris sed non adipiscing vel nibh dolor habitant bibendum. turpis nisl volutpat elit. Suspendisse Aenean eu suscipit lorem egestas. cursus Nam"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"analytics_identifier"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sollicitudin ac vel eros. interdum. in, Suspendisse Pellentesque habitant tristique libero. adipiscing elit. Quisque et leo at senectus risus tempor pellentesque tristique Lorem ac a Ut non ac porttitor vestibulum. imperdiet est. suscipit molestie aliquet. eu turpis morbi orci scelerisque. egestas. sagittis Aenean volutpat Nam Ut nisl Sed nibh."</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"content_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"75715204-d59b-4af4-9763-65368b37cd96"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"document_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"interdum. leo lectus turpis sit Quisque libero. Pellentesque Lorem tempor et et ac ultricies Ut ac Nam lorem molestie purus"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="nl">"locale"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ar"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"schema_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Nam scelerisque. ac finibus, ac ipsum sagittis nibh eu turpis ultricies a nibh. Mauris Duis nisl Pellentesque non at dolor eu risus orci vel tristique consectetur lorem pellentesque porttitor sem hendrerit, egestas. non Lorem"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"at ac vestibulum. Nam risus amet, habitant est. Quisque scelerisque. tempor leo morbi a adipiscing cursus tristique in, aliquet. ultricies dolor interdum. nisl volutpat orci et elit. purus molestie netus Nam"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"web_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://example.com/a86b4789-5953-4426-a512-a1ac7c775a9a/2ada1fc1-afa2-4bcd-8e95-dbfdc291f6c0/cc7c8613-e7e2-40b5-b147-d99bb53e11d4/b0b21499-9f13-442d-8a81-f3a524bd37db/afc82a8c-2c54-4a34-9e4a-b3efbd8de2f5#9b0e2f3c3bc1cbc0e291d0f3b45147c5"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="nl">"level_one_taxons"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"api_path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/e492f1b9-93a7-4b4c-9a0e-2fb7c18243b7"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"api_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://example.com/8dba751f-54f1-43ea-9ae4-1ad592499841/3376c44e-b7f7-4bf8-87b5-622a3fc8a927/fd62caa2-e54f-4a01-a4e5-f0d8dc3fc610/7acdab44-f578-4a9b-b005-f6723ec0a02d/4d10e646-ec41-441c-9218-6f5cdfdcb93f#796d51db4da2b27ec1ca607a0e18e01e"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"base_path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/d79b46c2-3b56-4b65-bc03-2ca0aa947a0c/44e115ef-36e7-4c80-b326-a51a251f307f"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"content_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"e0bb94f7-919f-40b7-8293-1db5ed0103ba"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="nl">"locale"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sr"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"schema_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"risus et tristique ultricies amet, vel Duis Sed massa Nam Mauris et ipsum est. sit scelerisque. finibus, tristique morbi fames lectus adipiscing tempor hendrerit, tempor pellentesque ac Lorem eu senectus libero. Pellentesque habitant nibh leo Nam Quisque eu molestie at sed consectetur vestibulum. porttitor lorem non imperdiet Suspendisse risus non Ut orci Ut suscipit sagittis malesuada dolor volutpat turpis sem egestas. cursus molestie aliquet. netus nibh. ac interdum. sollicitudin vel mauris interdum. purus"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Ut amet, et Suspendisse aliquet. Mauris libero. non mauris interdum. Pellentesque sem tristique at nibh ipsum sagittis cursus porttitor risus Ut sed morbi finibus, massa ac tempor tristique dolor nibh. senectus scelerisque. pellentesque suscipit vel purus Aenean ac eu Duis orci hendrerit, eros. tempor Sed ac sollicitudin leo nisl Nam malesuada turpis eu netus interdum. a imperdiet in, risus adipiscing dolor"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"web_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://example.com/e911d19c-d76c-4f27-99bc-4f92864f23e4/ff41555d-4d09-4673-a69f-59b7a34a5f31#d89adaea1fd6decb7b97a2188fe155c9"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"analytics_identifier"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"api_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://example.com/781b774f-38e2-44a0-878a-f67906955e37/2b8b09d9-3e84-47e3-afec-cbbce58d77f2/dee23f2e-4daa-46bf-97ab-b0e94430220a#54c45430ad54a9df90863909d934ecf2"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"base_path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/e997260c-23cd-4183-b735-1149c09c53cb/3fd95c14-4876-49b9-b85d-d808cc5d101f/4fb5eb55-4db5-4ab5-b6a2-d061a0059431"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"content_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"50bfc752-b895-4481-9866-d99e70c2634a"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"document_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"a suscipit ac at amet, risus et"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"locale"</span><span class="p">:</span><span class="w"> </span><span class="s2">"vi"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"public_updated_at"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"fames egestas. leo Pellentesque habitant nisl Lorem aliquet. adipiscing ipsum eu tempor at sollicitudin Sed a netus ultricies molestie porttitor finibus, lorem eros."</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"web_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://example.com/cdd21c07-0ab2-4f4d-8bb8-686056b35b12/93036444-885a-4783-a9c1-d56f07198221/229cba2a-72fe-4eae-99fb-586c8495d111/c9965818-5f0d-4860-a6b9-09c83da0011a/a2ddcb32-72c5-48d6-b231-2b0c01f4ff83#56b74b2140df74b4e848e3ac4e8d8d63"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"api_path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/5a7ac307-ce96-439d-9b35-3d2b1ac5cbcb/ac4a49f1-ffd2-4060-afcd-bd800661ee23/22c706b2-545f-46f3-8872-8828a763d5c2"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"api_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://example.com/6318a579-fb10-4d6d-8d16-f7483030614f#603c886a471a0a5092ff70ac4cab8bd3"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"base_path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/8506a637-67ee-4843-909f-54c3d7bb8f0a/340d02b9-13b0-4615-835e-70187f789978/55e75d6c-0156-4d06-a1ea-2d25714518f8"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"content_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"814fcf80-fd0d-4e41-857f-43f782b81195"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"document_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"elit. tempor molestie eros. sem Suspendisse Sed suscipit in, consectetur massa Pellentesque interdum. adipiscing sed ac Ut non hendrerit, morbi tristique ultricies senectus fames netus lorem nibh. sollicitudin nisl cursus sit non et ipsum ac Ut aliquet. amet, imperdiet volutpat pellentesque dolor interdum. et scelerisque. Aenean at nibh bibendum. Duis lectus ac purus Mauris ac turpis tristique porttitor malesuada a sagittis eu Quisque Lorem tempor vel eu Nam Nam vel dolor finibus, libero. risus mauris leo molestie est. egestas. habitant risus vestibulum. orci"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"locale"</span><span class="p">:</span><span class="w"> </span><span class="s2">"uk"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"schema_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"vel Aenean Mauris Ut tristique amet, ultricies habitant fames hendrerit, scelerisque. egestas. malesuada Quisque nibh aliquet. dolor Sed molestie Nam finibus, a Ut sagittis dolor ac ac Lorem et nisl ac purus morbi cursus libero. imperdiet tristique leo sed risus tempor at Pellentesque interdum. lectus lorem consectetur ipsum mauris vestibulum. sem eu risus"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"libero. egestas. Nam Sed habitant risus turpis lectus dolor et molestie tristique non Quisque cursus lorem Mauris vestibulum. sit eu nibh. suscipit amet, a bibendum. aliquet. eu pellentesque ultricies sagittis netus sem molestie volutpat risus ac vel ac tristique orci in, finibus, et interdum. sollicitudin mauris Lorem Nam fames nibh Ut eros. Suspendisse purus porttitor"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"web_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://example.com/722fb1a5-5aac-45cb-981e-fac4ef962da4/d03effd0-a0b6-420c-bce3-126c3db48faf/c1ac4988-da85-47ee-a9f6-c491ea58bf06/2429aebf-7e12-4fef-9e79-c61d61583eed/8cefa45e-74dd-432f-9d0a-8c6986dcdfb8#76d904125149edb0ae35ef959ae9f532"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"api_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://example.com/641a4c6c-8415-4825-aa23-72d53142c1e0/67fdde19-5c78-4920-9216-01036bd17545#4258dabe7a1f48e8277261128a153279"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"base_path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/82fcd421-7087-4480-a163-e7895e0a8364/e93ef5d7-ffd4-4254-b10c-b5a1e5aea397/d0085f4f-1d7c-4390-9c9f-26b552632ecf/af0c60cd-f604-46f6-8b11-7f13be8a535a"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"content_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"933869e6-8673-488c-a572-dd4d684035b7"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"document_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"vestibulum. dolor amet, in, est. Ut Nam nibh et sit Pellentesque interdum. Mauris mauris eros. cursus tempor dolor imperdiet lorem eu finibus, interdum. sed leo morbi egestas. Lorem vel habitant risus netus Ut purus ac elit. hendrerit, ipsum tempor nisl lectus turpis adipiscing senectus tristique aliquet. at eu volutpat sollicitudin molestie molestie a non bibendum. vel et fames tristique malesuada nibh. Duis sem massa ac porttitor scelerisque. ac Aenean ultricies orci Quisque non suscipit sagittis consectetur Suspendisse risus ac Nam pellentesque Sed libero."</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"locale"</span><span class="p">:</span><span class="w"> </span><span class="s2">"en"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"public_updated_at"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"vel fames habitant sem tempor nibh senectus lectus Nam ac malesuada egestas. consectetur ac massa Aenean sollicitudin Ut sagittis netus eu tristique Duis ac est. porttitor libero. purus non leo et pellentesque orci hendrerit, suscipit molestie Pellentesque scelerisque. dolor Mauris sed volutpat Ut Suspendisse nisl vestibulum. sit imperdiet morbi"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"web_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://example.com/24c04313-5fc2-40b6-b12b-79ab56fe39ec/044f1149-0d16-4df4-a3f0-9df76d580c37/2bacf9c0-ed7a-4e3a-a428-c8917f1d609d#a998d6b2bc877af8ee6be2b4b82cd0ad"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"api_path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/7ad1adbb-89a3-4df3-add8-0cf47f7b5a99"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"api_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://example.com/645baab7-776f-4559-99ef-0eef2c2986d6/06188281-61ff-4d2f-9bda-511eb1873867/d32bd4a6-4510-4b6e-b052-04166168fa4a#dfca8df86002b1fd87bc322a9eef4831"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"base_path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/100bf008-14d5-434a-8ef5-c0467a645051/25c77f3c-43a3-428d-b6ff-96eab3ced20c/d3d82aab-fa30-4206-b88d-02b3049dce92"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"content_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"680df112-5415-4cb0-ace4-472a9eb86c8a"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"locale"</span><span class="p">:</span><span class="w"> </span><span class="s2">"is"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"schema_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"hendrerit, lectus nibh. Nam ultricies Ut sem non vel elit. consectetur mauris non massa a netus leo fames vestibulum. et molestie eu aliquet. pellentesque nibh habitant est. ac risus Aenean Lorem porttitor tristique Sed senectus Pellentesque tempor orci ipsum tempor eros. interdum. ac malesuada ac sollicitudin amet, eu lorem at in, dolor"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"porttitor suscipit sed purus et Ut habitant amet, ac imperdiet libero. vel mauris scelerisque. non et nibh. ac turpis Duis tristique tristique fames ac risus egestas. lorem eros. ultricies vestibulum. vel nisl sit leo tempor finibus, at netus senectus adipiscing in, eu sollicitudin massa eu Mauris ac aliquet. dolor Suspendisse Aenean Lorem molestie ipsum tempor molestie sem dolor est. lectus orci interdum. bibendum. consectetur Ut hendrerit, non malesuada sagittis Sed nibh morbi interdum. Quisque cursus Nam pellentesque a elit. risus Nam Pellentesque volutpat"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"web_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://example.com/90252a0a-27d8-4e1e-921f-ff1aa5255739/43ea51ec-8039-4c9b-8e1b-0880011afc76/93dc184d-a5e5-4c6b-90d2-0dd7895aa5cc#d2955271a49847e330365c83fbf0e478"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"analytics_identifier"</span><span class="p">:</span><span class="w"> </span><span class="s2">"malesuada molestie risus massa Aenean leo pellentesque sed Sed scelerisque. Lorem Quisque nibh. risus et sit Ut a finibus, aliquet. volutpat fames eu lectus est. nibh interdum. sem Duis nisl orci senectus ultricies et Pellentesque purus netus in, sagittis Nam tempor morbi lorem sollicitudin Mauris eros. adipiscing turpis Ut ac hendrerit, non at Nam elit. ac suscipit vel porttitor ac vestibulum. bibendum. mauris molestie tempor cursus amet, dolor egestas. ipsum Suspendisse consectetur tristique non ac imperdiet interdum. libero. tristique eu vel habitant dolor"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"api_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://example.com/363a04dd-d29d-4e7e-8d4a-6179dfdf5e9c/edc6287d-2845-4dc5-84f1-9f1557243308#050dce4ed26b1886f90c3a236eda1436"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"base_path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/d7bd6453-beaf-45d0-b804-5d729fca9eb0/99778b41-f116-4e45-8f45-e320d152d442/ae65592f-5200-4a87-85d8-a1172b978594/f9a40db2-c880-48d7-a88b-f3255bd70b66"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"content_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"35a5dc8f-c3f4-4c9c-9175-47e8a1b89a5c"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"document_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"orci Quisque mauris risus suscipit tempor aliquet. ac Pellentesque porttitor morbi eu habitant Mauris et Duis molestie malesuada cursus a vestibulum. Nam tristique ac Ut tempor Ut vel tristique lectus ac eu sem turpis sagittis interdum. imperdiet senectus Lorem nibh vel ultricies"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"locale"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ru"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"public_updated_at"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"cursus tempor sed dolor et eros. ac egestas. molestie sollicitudin orci vel Ut purus ac risus Lorem dolor Quisque leo in, interdum. finibus, fames vestibulum. ultricies consectetur libero. adipiscing malesuada massa Aenean suscipit ipsum Nam ac at turpis eu tristique scelerisque. vel interdum. Duis senectus"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"analytics_identifier"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"api_path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/1d5eb495-0454-4efc-8182-2fe483dbe99a/c309de0d-9079-46c0-8fa4-692c822e6653/dd48dc54-e7be-45c2-bd44-47bd88dff7ef"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"base_path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/24ec4015-c9d4-49d9-8e3d-36d338d4b0f7/331c7d73-9729-4b0e-aee7-7bdcbecc223b/9d4574fa-c096-4120-a419-5aa987f5662b/2cd2e543-8534-41b9-9bce-db1ff1193282/cdf2ae90-7f29-4c30-8b42-c142dac30955"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"content_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"487dbe07-b20b-4d3d-8b2d-ac8fd01141a1"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"document_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"non interdum. Sed et Quisque nibh Ut dolor eros. non molestie nisl sagittis Mauris morbi Aenean lorem risus hendrerit, ac netus scelerisque. a orci vestibulum."</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="nl">"locale"</span><span class="p">:</span><span class="w"> </span><span class="s2">"uk"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"schema_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"non vel ac nibh eros. consectetur Nam Duis interdum. mauris Suspendisse eu scelerisque. Quisque et vel Ut porttitor massa pellentesque hendrerit, ac risus molestie morbi imperdiet Aenean ultricies orci nisl dolor ac a finibus, Sed nibh. lorem tristique purus dolor malesuada volutpat elit. tristique eu in, molestie sit aliquet. tempor at suscipit sem Lorem risus adipiscing vestibulum. et lectus leo habitant egestas. cursus bibendum. netus interdum. senectus est. libero. turpis Pellentesque ac non amet, Mauris sollicitudin fames Ut ipsum sagittis sed Nam tempor"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"pellentesque ipsum turpis risus sagittis Suspendisse porttitor dolor ac risus morbi nibh. orci Ut molestie egestas. Sed cursus libero. Ut et fames vel sit finibus, ac non netus Mauris bibendum. Duis interdum. adipiscing imperdiet senectus vestibulum. nisl vel ac Aenean sed est. et at mauris a tristique Nam nibh tempor purus Quisque ultricies Lorem sollicitudin molestie Nam Pellentesque habitant eu ac dolor malesuada lorem suscipit eros. sem scelerisque. elit. eu interdum. volutpat aliquet. hendrerit, non leo tristique"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"web_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://example.com/b7482cd8-7122-4958-8a84-d60eb8ed7b76/9738eb3c-9661-4b98-b91c-5b19df03a681/f56434c7-ae28-42d4-9572-da30b3ee9a95#b86171c5fbef7a353ef3b6874586661a"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="nl">"ministers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"analytics_identifier"</span><span class="p">:</span><span class="w"> </span><span class="s2">"vestibulum. massa nibh. sed finibus, scelerisque. mauris Sed sit sem in, elit. nisl leo Lorem eros. a turpis netus ac tempor senectus sollicitudin morbi Nam Suspendisse habitant malesuada non sagittis ultricies Ut"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"api_path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/23a01342-7f04-4cae-8254-eb1a95ba3521/231bcaae-d259-4a43-ae43-3ceb963201db/946d4795-f5c2-4533-ab67-02951636fceb"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"api_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://example.com/af2745a5-c93b-45d7-a58f-a457412da9f8/64896631-456e-46a6-be81-204b69709dc9#6eb9f5b67ac46dbae0ebe09c26b14d18"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"content_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"8acaf625-512f-4444-9106-14b68f99f530"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"document_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Nam eros. sed fames morbi Mauris nibh Sed senectus amet, imperdiet ac Quisque Ut molestie nibh. pellentesque malesuada sagittis turpis non tempor sem sollicitudin orci in, netus Nam non eu ac et Ut volutpat adipiscing vestibulum. scelerisque. eu Duis lorem tristique dolor ipsum risus aliquet. molestie at et ac egestas. a porttitor leo tristique Aenean nisl hendrerit, finibus, ultricies bibendum. Pellentesque est. vel sit vel interdum. suscipit risus Suspendisse dolor purus mauris consectetur lectus habitant Lorem elit. ac libero. cursus massa interdum. tempor"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"locale"</span><span class="p">:</span><span class="w"> </span><span class="s2">"en"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"tristique nibh. Sed turpis interdum. tempor est. suscipit in, interdum. Nam imperdiet dolor Mauris ac ac tempor"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"web_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://example.com/cc1ce314-c022-42ec-8618-cf5b15f10f4e/cb415062-99e1-4d25-8fe8-79861baa91e5/3dfc93a5-41f5-4440-95bb-f4516d1f12b0/f524d6be-2c83-4d65-b2e3-f53e301c4bb8#f94f2f5f8315b39be1c8173bc17ac8b8"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"api_path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/6b357d64-8eb7-4084-a978-9d79c5a826eb/5854119e-f882-4631-a877-9a3f2faa77c1/f19bbe31-1f2d-4bd2-9e1f-7e1b8ae727d9"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"api_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://example.com/bea27642-331e-4286-9654-2ea9c5faa0aa/bb7872f4-e93a-481a-8308-daf09e47f806/8c602d56-3550-417f-99fc-8ef07d9bfab1/08040891-e95f-491c-a2e8-1731af7dc735#926c132c0a13535c9f26b8064ada19a0"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"base_path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/622e28b7-26ee-4e32-b800-dde76c29515a/86300b78-ed46-405f-a437-938d6fe08b0e/3dfc48bf-54e8-4ac6-b30d-78c357501bdb/bad8d64f-ffe6-410b-bef4-f31f40caa150/19c0ad59-bd04-4ec0-8ef7-23f8332b945f"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"content_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"b54d4a1c-c1e1-4206-acf0-432fe2da4a8e"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"document_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"a habitant consectetur vel morbi ultricies orci risus ac at suscipit porttitor volutpat egestas. non eu Aenean mauris sem aliquet. massa dolor cursus sollicitudin turpis Quisque Nam leo in, interdum. adipiscing tempor ac ac tristique imperdiet Nam Pellentesque pellentesque lorem sed netus Mauris Ut purus et Sed bibendum. vestibulum. risus eu non lectus hendrerit, molestie scelerisque. sagittis est. sit ipsum tempor senectus amet, et tristique Ut nibh finibus, Lorem nisl eros. elit. molestie malesuada Suspendisse Duis fames ac interdum. nibh. dolor vel libero."</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"locale"</span><span class="p">:</span><span class="w"> </span><span class="s2">"lv"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Quisque elit. Aenean hendrerit, eros. et Ut finibus, amet, netus sit egestas. Nam libero. non Pellentesque nibh. ac tempor tristique consectetur tempor orci adipiscing Mauris ac non Sed Suspendisse malesuada volutpat est. eu risus massa imperdiet ipsum ultricies Lorem et Duis eu lorem mauris vestibulum. vel morbi purus nisl cursus pellentesque suscipit sagittis fames turpis scelerisque. vel habitant dolor Nam molestie senectus interdum. Ut tristique ac risus molestie porttitor sem dolor bibendum. leo sollicitudin nibh at aliquet. in, ac interdum. a sed lectus"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"web_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://example.com/b732d3de-1ee6-4dcf-a988-bc4af7da0dbc#c75b2d035f2ccb99e8c3d9e596013645"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"api_path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/93b6f326-d3e2-4757-8f4e-2f7743133a87/8bd71d60-02f4-4479-ba2b-bd6bacebe31b"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"api_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://example.com/d0baf53d-9ba5-4dc7-8b0e-fe42c5a97356/65e87876-b096-4e79-ab6f-ba27ef74031e/b59f6c83-6d07-40c3-ba70-29aec6628c79#480f416a1818ba5554a7562c3362c155"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"base_path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/1f682f01-57ae-4115-8662-7d5db2b9908d/ca84282c-a602-4021-be5c-7b18b2feaee3"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"content_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0cd1a088-43c4-4ac5-afae-172283a62ffd"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"document_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"adipiscing purus Nam Suspendisse dolor nisl ac amet, tempor Mauris et at molestie lorem molestie vel eu et hendrerit, Sed ultricies nibh Ut sollicitudin lectus egestas. risus dolor cursus Aenean Quisque sem Pellentesque interdum. est. nibh. sagittis turpis a interdum. tristique elit. habitant porttitor morbi pellentesque Ut eros. in, aliquet. consectetur sed"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"locale"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sl"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"schema_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"netus lectus tristique Ut malesuada senectus Suspendisse molestie imperdiet non porttitor lorem ultricies scelerisque. tristique eu amet, Nam Mauris Quisque non hendrerit, ac nibh bibendum. sed libero. vel"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Lorem lorem ac risus Quisque sit a massa at cursus senectus sollicitudin Nam lectus Suspendisse morbi volutpat eu imperdiet tristique Ut habitant vel sagittis scelerisque. Ut fames interdum. tempor eu nisl Mauris non egestas. malesuada dolor et in, adipiscing nibh. ac Duis ac amet, Sed elit. netus ipsum non molestie porttitor bibendum. tempor purus ac finibus, leo suscipit molestie mauris aliquet. orci hendrerit, Nam eros. nibh vestibulum. ultricies"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"web_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://example.com/6ca2814e-7e23-4138-bd5e-b8eb01c41314/bb1d7de3-b65a-4e4e-b283-d7d31bdba52f/15242a56-f3a8-494c-bc04-3bb8520496ab#7296a647b61d3e3a18cf73a7271dacf7"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"api_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://example.com/dd341452-3d4a-4882-a787-d7f1bcc75481#1af0ce72cb3918f63367fed11093be51"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"base_path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/454550c8-521e-412f-a40b-d981be9c20a8/90be6b41-ef6e-4bb1-b5bc-892861c28633/6dc8a87f-b345-44b1-9bc3-448f8ef0835e"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"content_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"dca50214-b761-4564-afea-250cfcf8fb0c"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"document_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ac aliquet. morbi Pellentesque Ut volutpat scelerisque. orci porttitor tempor suscipit ac consectetur bibendum. vel in, eu tristique imperdiet risus eu hendrerit, dolor cursus elit. sollicitudin sem eros. amet, et Duis non sed vel Quisque Nam habitant lectus nibh non vestibulum."</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="nl">"locale"</span><span class="p">:</span><span class="w"> </span><span class="s2">"en"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sed amet, adipiscing nisl libero. netus pellentesque vel hendrerit, mauris at non molestie Ut"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"api_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://example.com/2b07c51b-8e45-41fe-b218-ed081860d2b2/b1c47a15-3ffc-4b81-8732-19ed6b5d1a56/62e1dcfa-776c-46c0-95ed-f1fcced278f8/2075d16e-843a-4161-a725-735849460551#6310cc1130689792d42c51e6fb4815c6"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"base_path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/5d7b7733-700e-4c53-8340-11956410da23/9d4e65d9-6f6a-4c15-b3ee-1673faebbdf9/ed9fe9c9-1a73-45cc-8b1d-08c8030b5059/2888e756-f486-420b-97eb-608e1c17c9dd/34330c2f-24a0-4af0-8c1c-92bc2b748d75"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"content_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"fb5e2dc7-dbef-4ca4-95a9-0607629a78e4"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"document_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Mauris nibh adipiscing ipsum cursus a volutpat lectus massa ac sit ac"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="nl">"locale"</span><span class="p">:</span><span class="w"> </span><span class="s2">"dr"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"vestibulum. ac scelerisque. tristique sed in,"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"web_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://example.com/05a00f9d-2730-4c58-9297-6bf7ddef454a/65a19c04-1ec1-4d59-afba-a0692fec3ebc/45b1b159-eb7a-426b-99bb-fc755537a08f/c3b54605-c01d-402d-bf70-2b8e8307947a#dc4e1e7881ae3dd4961e802c86367f93"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"api_path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/31a4d890-8186-40f3-89b8-be2ce430e67e/4a7e7b8e-ca8a-4cc4-967a-17cdd473aa08"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"api_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://example.com/54ed8abc-5357-4aa2-b869-e67a5073c57d/0d90b2fa-16ea-47f6-998b-f8cda93c23c6#d84062a095b648923c78c900c6c8a4b4"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"content_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"5ee53c75-9b1c-4cd5-99ac-ab24b425d5b8"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"locale"</span><span class="p">:</span><span class="w"> </span><span class="s2">"kk"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"schema_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"molestie adipiscing et nisl eu tempor vestibulum. pellentesque Aenean at senectus ac ac vel ultricies massa eros. a dolor elit. Pellentesque lectus imperdiet est. amet, Ut Lorem tristique Quisque bibendum. molestie sem malesuada risus risus non volutpat ac consectetur sollicitudin eu Nam Ut scelerisque. egestas. sit porttitor Duis tristique tempor hendrerit, habitant Nam suscipit finibus, ipsum Suspendisse libero. Mauris mauris interdum. vel dolor leo orci fames lorem cursus in, turpis Sed sagittis aliquet. nibh. sed ac interdum. morbi purus et non netus nibh"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"vel leo est. nibh. dolor risus"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"web_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://example.com/e3ae0c21-3463-4f8e-84cf-29798fd85c93#44407b9f98da9649a2ac9a22d3057ded"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"analytics_identifier"</span><span class="p">:</span><span class="w"> </span><span class="s2">"elit. scelerisque. Quisque molestie ac libero. leo fames adipiscing ultricies nibh. consectetur massa eros. eu lorem habitant ac tempor malesuada"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"api_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://example.com/35340ea9-4bca-4337-b039-6cabcf95d035/e05e4361-2ca5-41f8-87f8-a6891ab4eeef#e9cf748bb9fc193ceb94516526c3a005"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"base_path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/85743ae6-0b85-4032-b49d-ff03c7e10204"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"content_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"001512a4-7b3c-4766-891f-d01eec817de1"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"document_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"non sit egestas. Nam fames elit. netus pellentesque molestie risus Ut cursus ipsum risus tristique dolor et Quisque at Duis libero. purus in, ac tristique Mauris ac scelerisque. non Nam leo est. Aenean turpis nibh. adipiscing sed nibh imperdiet dolor lorem interdum. lectus tempor sagittis eros. orci malesuada ultricies bibendum. amet, molestie Sed consectetur hendrerit, Ut morbi interdum. vel finibus, porttitor senectus et tempor Pellentesque habitant eu Suspendisse sollicitudin eu nisl volutpat vel sem vestibulum. aliquet. Lorem ac a mauris suscipit ac massa"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"locale"</span><span class="p">:</span><span class="w"> </span><span class="s2">"az"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"public_updated_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-06-03T07:46:42+00:00"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"schema_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ac tristique ac nibh vel molestie egestas. eu nisl Duis massa tempor sem Mauris nibh. sit ac scelerisque. purus aliquet. adipiscing lorem Aenean in, amet, elit. lectus vel imperdiet dolor bibendum. molestie malesuada Ut non Sed eu sollicitudin at Suspendisse habitant ipsum vestibulum. orci non consectetur Pellentesque Nam cursus hendrerit, ac mauris suscipit dolor leo a fames ultricies Ut est. morbi et eros. senectus tristique volutpat pellentesque Lorem libero. tempor risus sed et"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"molestie ultricies leo Pellentesque at bibendum. elit. sagittis lorem vel nibh Lorem nisl tristique Mauris suscipit libero. ac orci eros. interdum. finibus, eu eu Nam egestas. vestibulum. Duis habitant mauris senectus a lectus est. malesuada hendrerit, in, pellentesque Ut tempor purus porttitor et Sed non massa sollicitudin netus risus sem morbi tempor ac dolor amet, et turpis risus Aenean molestie sit scelerisque. Suspendisse Quisque ipsum aliquet. nibh. adipiscing imperdiet volutpat Nam consectetur interdum. ac cursus dolor Ut sed non fames tristique ac vel"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"api_path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/4e8516b8-5bf8-408b-8f15-677e82a10e4f/f7d4f8b4-3891-4ac6-96c4-947e50ec0424"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"api_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://example.com/f9b605f7-eac8-43d2-8b1c-23a84e2643a3#7df33513e12ee3df2bb88fa69317b270"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"content_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"b45bc85e-87d5-4ea3-ab70-c2e4b777ee19"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"document_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"porttitor sem ac a molestie adipiscing senectus malesuada nibh. ac non sit ipsum turpis in, eu vel Aenean suscipit sagittis mauris pellentesque nibh massa Nam vel orci fames tempor"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"locale"</span><span class="p">:</span><span class="w"> </span><span class="s2">"de"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"risus vel egestas. vel tempor fames nibh bibendum. ac suscipit interdum. senectus molestie sit Suspendisse tempor purus porttitor at cursus malesuada lectus sem pellentesque turpis orci ac sagittis consectetur imperdiet leo finibus, ac aliquet. Nam non eu massa Ut tristique Mauris Ut hendrerit, risus eros. morbi non ultricies adipiscing scelerisque. dolor in, Aenean et vestibulum. molestie mauris tristique eu est. sed ipsum nibh. Pellentesque sollicitudin libero. ac et lorem interdum. habitant amet, volutpat Quisque Sed dolor Lorem Nam elit. netus nisl a Duis"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="nl">"policies"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"analytics_identifier"</span><span class="p">:</span><span class="w"> </span><span class="s2">"fames Quisque ultricies purus malesuada Nam Sed elit. vel interdum. Mauris vestibulum. interdum. risus orci Suspendisse aliquet. non ac adipiscing molestie nibh. tristique pellentesque tempor dolor Lorem hendrerit, Aenean in, tempor molestie turpis at vel bibendum. eu egestas. morbi amet, sed leo suscipit a"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"api_path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/de348a09-7163-4813-8a12-f98f5742e9c3"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"base_path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/7a5bc51b-89b0-43d3-8452-82c81cf5fd17/985baf68-6b47-4d86-89e5-fd8887185d9b/83e3c45b-1f53-4d88-9769-c56cd0e9ad4f"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"content_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"31797420-608d-42ce-86db-2cbd0655b802"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"locale"</span><span class="p">:</span><span class="w"> </span><span class="s2">"de"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"schema_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"bibendum. adipiscing vel Suspendisse vestibulum. volutpat lectus dolor Mauris eu et non tempor a in, vel suscipit Aenean massa sollicitudin ipsum sem interdum. libero. morbi nibh. porttitor tristique fames eu imperdiet hendrerit, aliquet. tristique"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"vel sit finibus, non turpis eros. Aenean Mauris lectus netus dolor ac pellentesque eu amet, imperdiet molestie fames ipsum bibendum. Lorem purus consectetur sem ac habitant sed ac ultricies Pellentesque tempor mauris adipiscing Ut Suspendisse volutpat dolor scelerisque. leo nibh. et est. nibh suscipit at lorem Quisque Nam et ac risus egestas. Nam morbi nisl sollicitudin aliquet. molestie"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"base_path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/cbf12e58-4bab-410a-8d20-c607913b46bd/7d404ef8-c15e-4271-8c2e-ee4aca7c9c91/8c77fb48-da93-4ddc-990a-e6c920054142/ec267071-8a0e-4e11-8892-c887724e9551/acd1809c-7ffa-4f7a-a126-7ff632e925b1"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"content_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"19208dfb-4b56-42d7-8cff-6de56b64bcde"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"document_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sem amet, molestie interdum. eu lorem sagittis sit Nam mauris massa nibh. leo ipsum tempor egestas. Ut fames malesuada lectus suscipit nibh tristique imperdiet Suspendisse sollicitudin Quisque dolor non elit. ac"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="nl">"locale"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ka"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"schema_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"et imperdiet Duis molestie est. hendrerit, sollicitudin risus scelerisque. aliquet. eu porttitor netus lorem Suspendisse molestie non orci leo Mauris eros. suscipit Nam in, habitant dolor libero. Ut pellentesque sagittis a ipsum ac interdum. ac ultricies massa finibus, interdum. cursus at vel risus egestas. Quisque tristique Ut Pellentesque Nam sem amet, vel Sed nibh. mauris nibh non nisl consectetur tempor sed volutpat bibendum. adipiscing lectus tristique turpis vestibulum. ac Lorem dolor et eu morbi fames sit malesuada purus Aenean ac elit. senectus tempor"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sem eros. adipiscing interdum. cursus Sed molestie consectetur volutpat tristique dolor purus leo interdum. habitant sed porttitor ultricies Aenean hendrerit, sollicitudin non libero. fames Mauris scelerisque. aliquet. Lorem Suspendisse et tempor Ut vel ac tristique amet, Quisque nisl sit malesuada turpis ac egestas. imperdiet vestibulum. orci finibus, dolor Nam suscipit risus netus bibendum. mauris a massa morbi ac vel Pellentesque lorem Ut eu et nibh elit. Duis"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"api_path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/7bc7a11e-e4e3-4503-89c5-4c83711255f3"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"base_path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/4e317fd3-4231-4cc0-8894-bc5b23b439c4/15532612-5a5e-4bcb-9d88-1707d6fd5dc2"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"content_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"b3a29bc6-5a9f-40ed-9702-df4b79ba9c88"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"document_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"malesuada vel libero. lectus et nibh. est. egestas. nibh elit. Aenean non purus vestibulum. tristique amet, interdum. mauris hendrerit, adipiscing imperdiet orci Quisque cursus morbi leo sit risus bibendum. ac sem tempor lorem eros. consectetur tempor nisl ac dolor porttitor ac sed a habitant molestie eu tristique interdum. pellentesque in, dolor molestie Pellentesque senectus"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"locale"</span><span class="p">:</span><span class="w"> </span><span class="s2">"th"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"schema_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sagittis interdum. Nam lorem sem Ut Mauris morbi fames Sed sollicitudin tempor imperdiet hendrerit, Duis finibus, ac non est. Lorem suscipit adipiscing egestas. volutpat amet, dolor Pellentesque eu sed porttitor orci Quisque Ut in, non senectus scelerisque. nibh malesuada Nam massa vestibulum. lectus mauris ipsum vel Suspendisse et at leo habitant ac bibendum. cursus molestie pellentesque libero. nibh. nisl a turpis vel tristique tristique eu sit"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"morbi ac sollicitudin purus Duis lorem sed vel Lorem hendrerit, suscipit molestie"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"web_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://example.com/6d18b907-a423-4842-90bc-02ca7c96cd6d/4ab2d921-fc74-4fa9-b745-82268be59734/d1999fad-8c6b-465c-a7b1-f309944939a4#861cd87f93c50d8df9f808f2849ea5b3"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"api_path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/b3c56d37-8aaf-4ebc-9c38-f402df401144"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"base_path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/5a123e6c-179c-4f0a-aff2-187c0ce03280/b0d52068-a2bd-4699-ab6c-8ada7272db41/ef736950-4daf-41bc-85ca-b8aeb327da3b/8bc10bf2-1d39-47bc-8933-815953957ae4"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"content_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"7a2fce10-5b3b-4d12-bf59-1ff89250e415"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"document_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sed morbi eros. imperdiet molestie consectetur Ut sem in, ultricies tempor volutpat tristique nibh malesuada finibus, lectus orci ipsum amet, vel Nam dolor Duis tristique Mauris elit. leo purus risus Lorem sagittis interdum. ac mauris non egestas. interdum. hendrerit, cursus bibendum. Quisque Suspendisse lorem porttitor nibh. pellentesque sit massa sollicitudin ac Sed at eu et adipiscing dolor Pellentesque senectus habitant non libero. ac aliquet. turpis est. scelerisque. ac vestibulum. a tempor netus vel et Nam risus Aenean eu Ut fames molestie suscipit nisl"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"locale"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sr"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"public_updated_at"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"schema_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ac et sed sollicitudin morbi aliquet. molestie turpis suscipit fames libero. risus eros. netus amet, scelerisque. orci dolor ipsum molestie Suspendisse Duis vel sit tristique Quisque at lorem finibus, egestas. sagittis pellentesque vel sem leo adipiscing et mauris Ut vestibulum. dolor volutpat Mauris cursus nisl consectetur hendrerit, non eu Nam senectus est. massa in, interdum. porttitor elit. ac nibh. non Lorem risus a nibh tempor lectus Sed habitant Pellentesque bibendum. Aenean Ut ultricies tempor interdum. Nam eu ac ac malesuada imperdiet tristique purus"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Nam eros. dolor netus Mauris Sed ac senectus vel tristique molestie"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"base_path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/51e40d4f-1136-4c6c-9057-85765d11894c"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"content_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"726a801d-565a-4bfd-b848-9b6839fa3c05"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="nl">"locale"</span><span class="p">:</span><span class="w"> </span><span class="s2">"pt"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"public_updated_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-18T05:26:45+00:00"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sollicitudin ac Aenean orci aliquet. cursus Pellentesque netus a Mauris adipiscing Nam lectus molestie Ut Duis egestas. interdum. et Ut consectetur leo est. ac molestie Lorem in, senectus sem lorem Sed dolor vel eu risus purus ac massa nibh morbi libero. dolor ac elit. scelerisque. amet, ipsum eros. vel tempor sed fames pellentesque risus et vestibulum. bibendum. Nam finibus, Suspendisse eu nisl imperdiet sagittis tristique hendrerit, interdum. tempor habitant ultricies suscipit mauris malesuada volutpat nibh. non at turpis porttitor tristique Quisque sit non"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"web_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://example.com/caa12583-4830-4ff6-b82c-ce5e5e86cdea/27cb2695-723c-446f-86d3-c1fb2e78c318#010d763cf2d371b97e0d3f426fa18b5c"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"api_path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/9d3951af-f4b6-4acd-b324-a364653ef94a/b9e4dd05-43dd-4d8e-8243-6f55ef36ac42/bdec4f57-9243-4765-a983-edebc6d29aa4/07589eec-43fd-447f-a5a8-2ff2d476bf87/9ff50bbd-ca63-4a21-baad-d122e2ae87d5"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"base_path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/ec886527-1780-44c6-b7ae-dbc698f0b45d/8977267c-ce69-41c5-87d3-5f1485113c91/579b9e6b-ba9b-4086-853b-7dec23e0a8cb/6938ed8f-9cfa-4ab8-9499-d48c9e10ed8b/c5bd5e79-0d3b-45b0-a66a-cf72d2e082c5"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"content_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"7585ae33-a541-45c0-8399-abb27bf03881"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"locale"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ro"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"public_updated_at"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"at tempor Duis mauris morbi in, ac lectus non ac imperdiet suscipit dolor egestas. sollicitudin Sed vel sem sagittis Nam Suspendisse Ut Aenean eu eros. scelerisque. nibh. Mauris est. turpis Pellentesque risus Ut fames libero. habitant aliquet. non a nisl Quisque ac orci senectus lorem et volutpat et leo Lorem risus ultricies adipiscing tristique interdum. malesuada tristique vestibulum. interdum. eu molestie ipsum massa ac amet, bibendum. vel cursus pellentesque hendrerit, purus nibh Nam netus porttitor elit. tempor finibus, dolor consectetur sed sit molestie"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"api_path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/d112aaaf-da6c-4f7b-a885-d34b3ee8ead9/30ff1349-f2d2-4365-aca7-fd55822205c6/32949f35-17b8-4b6c-aeb7-55040837329a"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"api_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://example.com/61df4ce3-3aba-4679-924f-6969d7f5b24b/560b1f4f-15aa-4733-8c16-1a2969e026dd/cd950835-633f-48c8-9c6e-2bd9e4cdc86c/faeca0ac-1807-46e7-b5bb-cd8e3461755a#3f400ff2aea30445dd58fc8f0c566c72"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"base_path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/12e54ccd-86e5-4ce4-bbd2-721ec518d1a0/9c44ace8-4647-40bb-a8e5-8cea89482f5e"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"content_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"becadf4c-b511-42e7-8d95-b3814c1219c2"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"document_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Duis Pellentesque pellentesque tristique ultricies elit. libero. Nam Suspendisse suscipit dolor tristique Quisque amet, ac non a Ut Nam tempor Mauris purus interdum. morbi sit non sed nibh malesuada tempor lectus interdum. est. vel sagittis vel egestas. volutpat ac eros. molestie scelerisque. finibus, Aenean Sed sollicitudin hendrerit, at in, adipiscing mauris dolor turpis habitant et netus consectetur Ut"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"locale"</span><span class="p">:</span><span class="w"> </span><span class="s2">"fi"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"egestas. a risus ac eros. Mauris Sed lectus vestibulum. leo purus non est. et senectus et malesuada Ut Aenean dolor scelerisque. interdum. nibh. bibendum. nibh libero. netus sem pellentesque ipsum elit. non nisl mauris Suspendisse tempor molestie eu imperdiet eu molestie turpis Pellentesque sed amet, vel Quisque fames risus orci"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"api_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://example.com/4ed941de-78f3-4dcb-8136-76a2047a7729/365f4b05-a6fd-4ac2-9cd7-bbbc4c825476#c0468350cd29b3ede786dbd977540db3"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"base_path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/333edf6b-5cd0-4515-92b5-1d452fe5249e"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"content_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"81f4e51d-95d6-48e3-abde-645904968bbd"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"locale"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ja"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"vestibulum. tristique ac molestie turpis Pellentesque mauris eu molestie eu egestas. et at orci libero. Ut Duis morbi ac et Ut eros. scelerisque. Mauris nisl dolor Quisque vel porttitor risus imperdiet dolor suscipit pellentesque senectus massa sem Nam malesuada tempor finibus, interdum. Sed non risus lorem netus nibh ac Nam vel amet, nibh. Suspendisse aliquet. ipsum leo consectetur in, interdum. habitant sed sollicitudin cursus tempor ultricies elit. fames a sagittis"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"api_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://example.com/3e3ccd61-efa2-4aae-bf0c-45f28ce0541e/fc517994-a950-4c83-83cb-e21a68ca6c2d#b90811436579190728f9d41153574d59"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"base_path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/de028e0f-a935-41d9-93a9-feb68b194740/52899bba-e71f-4d69-875c-466c8f003c7c/264811b6-e477-4a70-907c-5d08ce5b445b/49a48d11-b641-4ae8-90e5-bcd7b9f6c264/6901b632-4f17-4f0a-9c3c-65b1d4944638"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"content_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"7d2bd1d0-2002-42c3-ba95-7bcb79d92fb7"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"document_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"non finibus, tristique scelerisque. turpis tempor risus ultricies nibh adipiscing mauris netus pellentesque libero. volutpat eros. ac et leo sagittis dolor interdum. elit. Mauris risus molestie Duis porttitor Ut tempor non hendrerit, a Nam malesuada ac sem et senectus egestas. Pellentesque sollicitudin sit ac habitant suscipit Nam sed eu Quisque in,"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"locale"</span><span class="p">:</span><span class="w"> </span><span class="s2">"tk"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"senectus risus lorem volutpat finibus, sed porttitor non suscipit molestie egestas. ultricies sollicitudin orci interdum. imperdiet cursus bibendum. ac Ut Aenean vestibulum. Suspendisse elit. molestie aliquet. dolor Quisque sem hendrerit, a vel interdum. mauris sagittis massa ac lectus tristique Sed nibh. eu amet, ipsum et eu consectetur Ut tempor in, turpis tristique fames adipiscing Duis Nam Nam netus scelerisque. Pellentesque purus tempor Mauris nibh Lorem sit eros. ac morbi est. pellentesque nisl libero. dolor risus ac non habitant at vel malesuada et leo"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="nl">"policy_areas"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+
+    </span><span class="p">],</span><span class="w">
+    </span><span class="nl">"topic_taxonomy_taxons"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"api_path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/e9bdb14f-f5d3-473d-8692-995c15d5d880/4b4d397c-e8c5-45f8-aa6c-1237b25e05eb/753cbade-27d3-495f-ae42-a64f8627f8dd/9691b623-828a-4b8d-8651-da8efd8c5d63"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"api_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://example.com/e1054506-88ba-42dd-b4b5-b9aa949d1d13#5178fec3b9da2ccff85296c514291e40"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"base_path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/e362fa0c-47de-445c-ba00-50e34f3a6928/d7125ca5-28ec-4e3f-8ff5-55f23552b5bc/9335b8da-9ad8-446c-8556-910467181ce9"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"content_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"dd9b9c0f-a7c3-4bc2-b98e-097144be5660"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"document_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ac lorem interdum. interdum. ultricies ac eros. Pellentesque bibendum. netus habitant scelerisque. adipiscing amet, Aenean Duis mauris tristique morbi Nam ac vel dolor hendrerit, Ut molestie finibus, aliquet. massa tempor eu a ac fames volutpat non risus Lorem turpis et senectus nibh sit sollicitudin in, imperdiet Nam porttitor lectus nibh. malesuada vel dolor ipsum non molestie Sed pellentesque egestas. orci Suspendisse tristique nisl vestibulum. eu elit. libero. tempor risus sed at consectetur leo Ut sem et suscipit purus est. Quisque cursus sagittis Mauris"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="nl">"locale"</span><span class="p">:</span><span class="w"> </span><span class="s2">"vi"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"public_updated_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-24T14:06:53+00:00"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Nam lorem molestie interdum. sed tristique lectus sit vel hendrerit, Duis leo egestas. senectus imperdiet molestie tristique vestibulum. morbi Ut in, risus porttitor est. ac purus nibh. consectetur ipsum adipiscing et sollicitudin nibh Suspendisse elit. risus Quisque a aliquet. ultricies non ac Mauris sem eu netus orci et bibendum. fames turpis amet, massa dolor finibus, volutpat sagittis scelerisque. non Ut eu"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"analytics_identifier"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Sed leo aliquet. interdum. eu Suspendisse non Mauris at morbi libero. Nam Pellentesque risus mauris orci ac hendrerit, egestas. ac Aenean sit porttitor eu pellentesque molestie Ut dolor vel molestie tristique massa adipiscing volutpat tempor consectetur lectus habitant senectus fames et nisl Duis turpis et sed malesuada ac tristique ipsum scelerisque. sollicitudin dolor nibh lorem est. netus purus vestibulum. ultricies nibh. Quisque ac amet, imperdiet finibus, in, non Nam sagittis suscipit elit. eros."</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"api_path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/04b48178-c083-4836-8c9b-a7f3f3b66382/7f81df8e-0162-42fe-bae6-76df97f8d565"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"api_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://example.com/bb405690-dda8-419a-9fd0-5fddf80e0acd/80cc0b50-e7cc-4fb0-8c1a-cf671291bb73/12e10e16-77a5-45d6-a684-cbf67177826b/3754f7e7-efe9-4bb3-90f4-d566bda788d6/f52f2121-08f6-4b38-98b4-5cbde8db3a87#d6711662f28e2c3f94740fbf4e7b6e18"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"base_path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/af9bd292-2af9-490c-8283-3fad43534f63/d39fcabf-134a-4cff-91e9-81872136098b/bfe8085a-03b1-4124-95eb-0188d8f9207a/eddd60db-0a02-4be1-ae56-06a0d0b47f14/4c6751bc-cf1a-41e5-9f9b-baa0b9c7510f"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"content_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"cb9f3cc5-1037-480a-a79d-07d8179d014a"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="nl">"locale"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sl"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"public_updated_at"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"amet, fames Mauris ac nibh. ac massa ultricies porttitor morbi tempor risus risus Pellentesque turpis tempor est. Sed malesuada cursus interdum. imperdiet purus vel nibh hendrerit, libero. eu eros. sollicitudin non in, molestie habitant lorem eu ac adipiscing volutpat finibus, sit sed a netus orci Nam scelerisque. Suspendisse dolor aliquet. Ut Quisque sagittis pellentesque at Aenean elit. Nam ipsum senectus suscipit consectetur"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"api_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://example.com/b7f737d8-edbd-4bdc-ae1b-78b09f3837d6#5dde368a6d92e7ed370287884a511271"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"base_path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/b6e499a9-567a-4055-b05b-4daf23e44ae8/c3444b3e-fbea-48b8-a984-3abd61a89d13/45c44fde-8bd1-4cea-aa4e-02a418360bdb/416ab29f-e806-43da-a50a-7a3a309759b3/90fc091a-2711-4100-a92d-4ff204db0633"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"content_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"8a794214-9dd6-443f-8ee5-18f4eec19c15"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="nl">"locale"</span><span class="p">:</span><span class="w"> </span><span class="s2">"bn"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"schema_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"tempor adipiscing morbi senectus leo libero. tempor Suspendisse eros. mauris turpis massa Ut sagittis in, lorem aliquet. egestas. lectus elit. cursus fames tristique consectetur finibus, dolor habitant Lorem"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"senectus Suspendisse nibh. sagittis massa eu aliquet."</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"api_path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/9a6abf60-6109-4be4-9b40-671ffbfbe4f7/6af39bf1-1c5a-4544-aa3f-d4f62b716cab/9b1827ec-9144-4f3a-a804-3b604f789508/e25b9128-5fe3-4c3d-b56a-38a427a522ef/b7a609ca-7939-483e-b908-effc99a1d587"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"api_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://example.com/f944f5a5-1290-426c-bf5d-4234e600a556/9075deac-e560-4dfb-8ed3-b48ea137e7cf/5a176e2e-eb58-44b2-af70-77624c4f74e1/ec346cc1-8640-4ac9-8113-96f205f71ab8#6e9a188e26904fd47e69d8bb3d24b9cb"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"base_path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/bf23bb6f-d616-40dc-abd4-890a595890ff/89e19f33-9511-49f3-b219-13aec28539ac/fb693d0d-6d4b-42d7-9346-c41954a5ac1f/c92036c7-8a84-4810-b8c6-02c12993e04c"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"content_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"19363c37-6aa1-49af-a218-172a8804c17e"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"document_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"leo tempor est. imperdiet et Mauris Duis senectus morbi Nam at"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="nl">"locale"</span><span class="p">:</span><span class="w"> </span><span class="s2">"az"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"public_updated_at"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"schema_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"morbi non interdum. elit. dolor sed Duis adipiscing sit tristique hendrerit, egestas. nisl finibus, Aenean purus Pellentesque a in, volutpat Mauris ac consectetur cursus amet, non molestie imperdiet et risus fames Suspendisse pellentesque aliquet. est. leo risus suscipit turpis Ut ultricies scelerisque. netus orci ac at nibh Lorem sagittis Nam mauris Sed"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"nibh molestie ac tristique purus Ut molestie imperdiet bibendum. est. vel sit libero. sagittis eu Aenean volutpat at suscipit morbi nisl et Ut massa amet, sem hendrerit, consectetur malesuada et sed cursus lorem interdum. ac Lorem Suspendisse vel mauris aliquet. Mauris porttitor Quisque lectus in, vestibulum. eros. risus fames ac orci Pellentesque Nam scelerisque."</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"analytics_identifier"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"api_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://example.com/4d14237f-769a-4f1d-b018-fe9ef3a72534/bf1d36bd-b459-468b-a221-cf2476741d55/5646d893-0392-49d2-ae50-3d68e4a96466/2edcfce6-d68a-46db-91cd-f6b7ff1ffb7f/480eb2d8-5d1b-4aaf-9cc0-ba5e665264f0#4b89cf33db5fe8602e3f254d0523634e"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"base_path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/e2a328a1-2497-4599-89ec-0f852fd10964/cec117cc-b7b6-4900-8521-ac143a6be334/a4b74786-07e1-47fd-9452-daed2e58ea97/430bae1e-31d1-43f2-b8ac-59278abdf5c7/28e2e3f1-7bdd-4846-b67e-bdfadd304964"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"content_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"3206d5c4-5d75-4f29-bc88-914ccadafb02"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"document_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"orci lorem dolor tempor Duis Ut eu tempor a at nibh. lectus porttitor et habitant amet, bibendum. massa eu Lorem sed Sed finibus, sollicitudin Ut est."</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="nl">"locale"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sq"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"public_updated_at"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"schema_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"et sagittis morbi massa eros. tempor pellentesque eu libero. non ac suscipit Aenean"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Duis purus Ut sem Lorem non cursus lorem Ut Sed nibh. tristique non dolor ultricies at eu Nam et finibus, et mauris molestie Suspendisse tempor volutpat risus netus senectus sollicitudin porttitor a tristique orci amet, libero. egestas. Quisque interdum. molestie lectus morbi aliquet. vestibulum. sed fames leo eu Mauris dolor Pellentesque sagittis ipsum pellentesque malesuada consectetur nisl interdum. ac suscipit est. Aenean habitant risus adipiscing ac vel ac eros. turpis in, massa scelerisque. elit. tempor vel nibh bibendum. ac Nam hendrerit, sit imperdiet"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"api_path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/bd55b3b6-0204-4ab3-bb12-ccafec831607/5f28c50c-a021-49eb-a902-6536422047b3/fef913f2-5034-4a5c-b18d-ed1afe2e8d58/3035726f-a66c-4138-b241-b334ea4bb888/0c11a786-25c6-41ff-8385-c715299e2517"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"base_path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/691203ed-67b1-4d57-bc73-cc882bdfa9cd/57506cb7-572d-467a-bd4b-68e2b1b9202a/b37274cc-1d4e-45f3-aa18-a068b22a2d5a/98d9f943-b1b1-45d9-bbd5-8ad3a63fa03c/f0ae2204-b199-454a-a484-54b7d3eae710"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"content_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"469f0479-399c-4db1-b648-85f6c520577d"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="nl">"locale"</span><span class="p">:</span><span class="w"> </span><span class="s2">"zh-tw"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"finibus, eros. adipiscing Pellentesque ultricies turpis Aenean netus consectetur morbi leo scelerisque. vestibulum. vel Ut suscipit tristique porttitor Ut hendrerit, molestie et ac Suspendisse Mauris cursus sed senectus nibh interdum. bibendum. orci eu ac at pellentesque risus ac purus a mauris Nam sit risus"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"analytics_identifier"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"api_path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/092a76af-ee5f-41d0-80c0-2458319d3f45/f3e49802-9388-43c1-a74c-df5e9d274a2a/58ab1ee4-ab4d-42b7-8a98-076d33451915"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"base_path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/80e7bff2-45df-40a8-b5c4-060b6db708d8/539a1827-4297-4354-8865-e4b063aaa01b"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"content_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"5c92929b-b7f7-4b48-9b90-4c904daa1bf6"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="nl">"locale"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ms"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"public_updated_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-08-20T11:49:56+00:00"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"tristique malesuada mauris turpis porttitor eros. interdum. elit. imperdiet Mauris risus ac et Quisque Pellentesque nibh amet, Sed molestie orci sed nisl Duis finibus, tristique sit consectetur dolor egestas."</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"web_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://example.com/40f07443-d9c4-4c8a-b187-05bed22ae31f/fa8e884b-7e3e-4e59-8a83-6e8f0c066089/5ddd64c8-c251-4b6a-9189-5ed5543fce0a/aa154023-de88-4674-9b0b-6171a1b9a863/59ba2f1b-0d7c-491e-969e-789f4594b53e#2bf3081bf7f9499fb3657f536b77cfda"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"analytics_identifier"</span><span class="p">:</span><span class="w"> </span><span class="s2">"non tristique turpis egestas. volutpat habitant Ut orci Quisque vestibulum. interdum. finibus, elit. leo ipsum eu ac tempor a cursus bibendum. non nibh. adipiscing vel dolor Suspendisse lectus aliquet. suscipit Pellentesque interdum. libero. nisl senectus tempor nibh massa risus molestie Aenean vel lorem ac tristique Mauris Duis consectetur amet, est. sagittis ultricies Ut et eros. fames et sit netus Nam sollicitudin morbi imperdiet in, purus hendrerit, sem mauris porttitor"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"api_path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/e70567f8-d105-486f-af9a-6d70f043a9ba/b4b1a62d-e137-474d-a884-a3514b45527c/108c3770-4cbc-4545-8df2-28400d53b754/e952a636-9bf5-40fe-9144-f078e6edf389/e198e050-693c-420c-b0ec-ac2a88b84aff"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"api_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://example.com/b3931f92-1ccd-490f-9b55-23af4b74cc59/03acd97f-d591-49ba-8813-0db221b1f505/9de30173-cec8-48e0-b869-c04316146299/f6350743-d3ae-4f01-8ed7-921dae419b08/9d391a75-7375-4524-a4ee-5909f7ecc543#b7afc4e1fb37c89a1d3b97b01f91eab6"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"base_path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/89f0fe03-43e7-411e-948a-b9b4d3adb1a9/bb352b93-e01d-4fd5-8f90-4ef42310c2e1/40357f0f-aa68-4e83-9d8e-05cebefa1d44"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"content_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"df26fffe-cb1e-45bc-ac38-dd67956f9509"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="nl">"locale"</span><span class="p">:</span><span class="w"> </span><span class="s2">"pt"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"schema_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Pellentesque tristique leo pellentesque est. molestie Aenean nisl egestas. eros. eu sollicitudin molestie fames non et tristique Mauris scelerisque. orci vestibulum. sed ipsum morbi mauris sem Lorem porttitor volutpat Suspendisse ac ac ac a risus purus et dolor vel senectus ac dolor elit. Nam adipiscing bibendum. vel netus at interdum. Ut non cursus hendrerit, finibus, in, sagittis suscipit malesuada Duis Ut turpis aliquet. imperdiet eu Quisque nibh lorem ultricies consectetur habitant sit amet, massa lectus tempor nibh. risus libero. interdum. Nam tempor Sed"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Ut ultricies elit. volutpat consectetur tristique vel ac nibh bibendum. interdum. ac egestas. molestie est. finibus, dolor dolor Sed senectus aliquet. Lorem Nam adipiscing vestibulum. sit eros. Quisque fames porttitor habitant orci scelerisque."</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"api_path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/a11d3edd-2d49-44b0-b3e8-858ec6fef381"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"api_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://example.com/8dbbfdbb-347e-48d4-8baa-61e28de5914a/71cb93c5-c10e-447f-841a-6bd5c2bf6e0b/eb1c80cd-c730-44c8-9815-2055a166680b/90d0449a-fbf1-4478-9c0f-78152735c6f9/c373f660-d5f9-4daf-a5d3-45a87fc67b02#5dacb9d04d0461d2fb1ddc5f4bbb250c"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"base_path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/8efe7bc6-8ac9-4b2c-81aa-113f13024550/42756b37-f18f-401e-ad59-d1e1c9f87e12"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"content_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1158b53a-04fe-4f18-bc32-510f69166860"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"locale"</span><span class="p">:</span><span class="w"> </span><span class="s2">"cy"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"schema_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"amet, cursus risus ac lorem ac Lorem imperdiet habitant Aenean suscipit eu adipiscing sagittis Nam nisl vestibulum. Duis est. dolor molestie dolor ac risus porttitor interdum. vel senectus morbi et purus et finibus, orci aliquet. in, Ut tempor sit Pellentesque at interdum. scelerisque. vel fames Mauris sollicitudin lectus consectetur ultricies ipsum leo eu massa Ut ac egestas. a eros. non tempor Suspendisse sed tristique malesuada volutpat turpis hendrerit, libero. mauris non Quisque tristique sem Nam molestie pellentesque netus nibh. elit. nibh Sed bibendum."</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"consectetur Pellentesque interdum. tristique risus libero. tempor nisl nibh. volutpat in, suscipit vestibulum. malesuada elit. sit non eros. ac ac ipsum sem pellentesque vel sed nibh lectus fames Duis amet, porttitor Ut tristique ac a dolor sollicitudin leo est. netus morbi Sed hendrerit, Nam"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"locale"</span><span class="p">:</span><span class="w"> </span><span class="s2">"es-419"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"public_updated_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-07-04T21:30:36+00:00"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"publishing_app"</span><span class="p">:</span><span class="w"> </span><span class="s2">"calendars"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"publishing_request_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Nam interdum. cursus eu finibus, est. turpis sem bibendum. pellentesque Mauris fames amet, volutpat tristique at morbi purus sagittis tristique aliquet. Lorem risus sed risus malesuada hendrerit, interdum. ipsum Duis a orci Quisque elit. non suscipit nisl et"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"publishing_scheduled_at"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"rendering_app"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"scheduled_publishing_delay_seconds"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"schema_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"facet"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Ut orci ac scelerisque. eros. ac porttitor leo fames interdum. sit habitant Mauris"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"updated_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-06-03T14:43:15+00:00"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"withdrawn_notice"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"withdrawn_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-07-15T22:17:06+00:00"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<hr>
+<h2 id='publisher-content-schema'>Publisher content schema</h2><p>This is what publisher apps should send to the publishing-api in This is what
+a publishing application sends to the publishing-api in a
+<a href="http://www.rubydoc.info/github/alphagov/gds-api-adapters/GdsApi/PublishingApiV2#put_content-instance_method"><code>put_content</code></a> call.</p>
+<h3 id='attributes'>Attributes</h3>
+<table class='schema-table'><tr><td><strong>access_limited</strong><br/><code>object</code></td> <td><table class='schema-table'><tr><td><strong>auth_bypass_ids</strong><br/></td> <td>Deprecated: auth_bypass_ids should be sent as a separate field<br/></td></tr>
+<tr><td><strong>organisations</strong><br/></td> <td>A list of organisation content ids permitted access to this item<br/></td></tr>
+<tr><td><strong>users</strong><br/><code>array</code></td> <td><br/></td></tr></table></td></tr>
+<tr><td><strong>analytics_identifier</strong><br/><code>string</code> or <code>null</code></td> <td>A short identifier we send to Google Analytics for multi-valued fields. This means we avoid the truncated values we would get if we sent the path or slug of eg organisations.<br/></td></tr>
+<tr><td><strong>auth_bypass_ids</strong><br/><code>array</code></td> <td><br/></td></tr>
+<tr><td><strong>base_path</strong><br/><code></code> or <code>null</code></td> <td><br/></td></tr>
+<tr><td><strong>bulk_publishing</strong><br/><code>boolean</code></td> <td><br/></td></tr>
+<tr><td><strong>change_note</strong><br/><code>["null", "string"]</code></td> <td><br/></td></tr>
+<tr><td><strong>description</strong><br/><code></code> or <code>null</code></td> <td><br/></td></tr>
+<tr><td><strong>details</strong><br/><code>object</code></td> <td><table class='schema-table'><tr><td><strong>closed_value</strong><br/></td> <td>Value that determines the closed state (the key field is in the past) of a topical facet.<br/></td></tr>
+<tr><td><strong>combine_mode</strong><br/><code>string</code></td> <td>Specifies how to combine with other facets<br/>Allowed values: <code>and</code>, <code>or</code></td></tr>
+<tr><td><strong>display_as_result_metadata</strong><br/><code>boolean</code></td> <td>Include this in search result metadata. Can be set for non-filterable facets.<br/></td></tr>
+<tr><td><strong>filter_key</strong><br/><code>string</code></td> <td>The exact rummager field name for this facet. Allows &lsquo;key&rsquo; to be aliased to a rummager filter field<br/></td></tr>
+<tr><td><strong>filter_value</strong><br/><code>string</code></td> <td>A preset filter value that is applied when a checkbox is selected<br/></td></tr>
+<tr><td><strong>filterable</strong><br/><code>boolean</code></td> <td>This must be true to show the facet to users.<br/></td></tr>
+<tr><td><strong>key</strong><br/><code>string</code></td> <td>The rummager field name used for this facet.<br/></td></tr>
+<tr><td><strong>keys</strong><br/><code>array</code></td> <td>Field names used for the taxon drop down.<br/></td></tr>
+<tr><td><strong>name</strong><br/><code>string</code></td> <td>Label for the facet.<br/></td></tr>
+<tr><td><strong>open_value</strong><br/></td> <td>Value that determines the open state (the key field is in the future) of a topical facet.<br/></td></tr>
+<tr><td><strong>preposition</strong><br/><code>string</code></td> <td>Text used to augment the description of the search when the facet is used.<br/></td></tr>
+<tr><td><strong>short_name</strong><br/><code>string</code></td> <td><br/></td></tr>
+<tr><td><strong>type</strong><br/><code>string</code></td> <td>Defines the UI component and how the facet is queried from the search API<br/>Allowed values: <code>autocomplete</code>, <code>checkbox</code>, <code>content_id</code>, <code>date</code>, <code>hidden</code>, <code>taxon</code>, <code>text</code>, <code>topical</code></td></tr></table></td></tr>
+<tr><td><strong>document_type</strong><br/><code>string</code></td> <td><br/>Allowed values: <code>facet</code></td></tr>
+<tr><td><strong>first_published_at</strong><br/><code>string</code></td> <td>The date the content was first published.  Automatically determined by the publishing-api, unless overridden by the publishing application.<br/></td></tr>
+<tr><td><strong>last_edited_at</strong><br/><code>string</code></td> <td>Last time when the content received a major or minor update.<br/></td></tr>
+<tr><td><strong>links</strong><br/><code>object</code></td> <td><table class='schema-table'><tr><td><strong>policy_areas</strong><br/></td> <td>A largely deprecated tag currently only used to power email alerts.<br/></td></tr></table></td></tr>
+<tr><td><strong>locale</strong><br/><code>string</code></td> <td><br/>Allowed values: <code>ar</code>, <code>az</code>, <code>be</code>, <code>bg</code>, <code>bn</code>, <code>cs</code>, <code>cy</code>, <code>da</code>, <code>de</code>, <code>dr</code>, <code>el</code>, <code>en</code>, <code>es</code>, <code>es-419</code>, <code>et</code>, <code>fa</code>, <code>fi</code>, <code>fr</code>, <code>gd</code>, <code>he</code>, <code>hi</code>, <code>hr</code>, <code>hu</code>, <code>hy</code>, <code>id</code>, <code>is</code>, <code>it</code>, <code>ja</code>, <code>ka</code>, <code>kk</code>, <code>ko</code>, <code>lt</code>, <code>lv</code>, <code>ms</code>, <code>mt</code>, <code>nl</code>, <code>no</code>, <code>pl</code>, <code>ps</code>, <code>pt</code>, <code>ro</code>, <code>ru</code>, <code>si</code>, <code>sk</code>, <code>sl</code>, <code>so</code>, <code>sq</code>, <code>sr</code>, <code>sv</code>, <code>sw</code>, <code>ta</code>, <code>th</code>, <code>tk</code>, <code>tr</code>, <code>uk</code>, <code>ur</code>, <code>uz</code>, <code>vi</code>, <code>zh</code>, <code>zh-hk</code>, <code>zh-tw</code></td></tr>
+<tr><td><strong>need_ids</strong><br/><code>array</code></td> <td><br/></td></tr>
+<tr><td><strong>phase</strong><br/><code>string</code></td> <td>The service design phase of this content item - https://www.gov.uk/service-manual/phases<br/>Allowed values: <code>alpha</code>, <code>beta</code>, <code>live</code></td></tr>
+<tr><td><strong>previous_version</strong><br/><code>string</code></td> <td><br/></td></tr>
+<tr><td><strong>public_updated_at</strong><br/><code>string</code></td> <td>When the content was last significantly changed (a major update). Shown to users.  Automatically determined by the publishing-api, unless overridden by the publishing application.<br/></td></tr>
+<tr><td><strong>publishing_app</strong><br/><code>string</code></td> <td>The application that published this item.<br/>Allowed values: <code>calculators</code>, <code>calendars</code>, <code>collections-publisher</code>, <code>contacts</code>, <code>content-publisher</code>, <code>content-tagger</code>, <code>email-alert-frontend</code>, <code>external-link-tracker</code>, <code>feedback</code>, <code>frontend</code>, <code>government-frontend</code>, <code>hmrc-manuals-api</code>, <code>info-frontend</code>, <code>licencefinder</code>, <code>local-links-manager</code>, <code>manuals-frontend</code>, <code>manuals-publisher</code>, <code>maslow</code>, <code>performanceplatform-big-screen-view</code>, <code>publisher</code>, <code>rummager</code>, <code>search-admin</code>, <code>search-api</code>, <code>service-manual-publisher</code>, <code>share-sale-publisher</code>, <code>short-url-manager</code>, <code>smartanswers</code>, <code>special-route-publisher</code>, <code>specialist-publisher</code>, <code>static</code>, <code>tariff</code>, <code>travel-advice-publisher</code>, <code>whitehall</code></td></tr>
+<tr><td><strong>redirects</strong><br/><code>array</code></td> <td><br/></td></tr>
+<tr><td><strong>rendering_app</strong><br/><code></code> or <code>null</code></td> <td><br/></td></tr>
+<tr><td><strong>routes</strong><br/><code>array</code></td> <td><br/></td></tr>
+<tr><td><strong>schema_name</strong><br/><code>string</code></td> <td><br/>Allowed values: <code>facet</code></td></tr>
+<tr><td><strong>title</strong><br/><code>string</code></td> <td><br/></td></tr>
+<tr><td><strong>update_type</strong><br/></td> <td><br/>Allowed values: <code>major</code>, <code>minor</code>, <code>republish</code></td></tr></table>
+<p><a href="https://github.com/alphagov/govuk-content-schemas/blob/master/dist/formats/facet/publisher/schema.json">View this schema on GitHub</a></p>
+<h3 id='random-example'>Random example</h3><div class="highlight"><pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"analytics_identifier"</span><span class="p">:</span><span class="w"> </span><span class="s2">"lorem amet, sem sed volutpat turpis risus sagittis consectetur Mauris Lorem Sed suscipit finibus, senectus non nisl sit adipiscing Duis interdum. morbi et ac libero. eros. dolor vestibulum. Nam imperdiet vel nibh massa Pellentesque nibh. Aenean risus Nam ipsum interdum. non mauris eu molestie cursus tristique leo a Ut lectus purus Suspendisse egestas. dolor molestie ac ac vel et aliquet. Ut tempor scelerisque. netus in, at tristique tempor Quisque eu ac malesuada hendrerit, ultricies pellentesque"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"base_path"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"details"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"closed_value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"scelerisque. Pellentesque tristique adipiscing aliquet. risus eros. vestibulum. a suscipit"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"display_as_result_metadata"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"filterable"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"eu mauris egestas. interdum. a lorem et Mauris non pellentesque tempor nibh lectus eros. Lorem Nam amet, risus volutpat tristique leo tempor Sed sagittis Suspendisse porttitor ac molestie sit dolor orci vel fames morbi scelerisque. est. turpis finibus, purus hendrerit, nisl at Ut vestibulum. consectetur cursus netus tristique vel eu et bibendum. ac aliquet. sem malesuada Duis imperdiet Nam ultricies sollicitudin nibh. Aenean Quisque risus interdum."</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"keys"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="s2">"vel consectetur sit egestas. Quisque dolor tristique scelerisque. vestibulum. eros. Nam Nam sem cursus at libero. a massa morbi in, purus habitant molestie Aenean pellentesque Ut non risus ac nisl Pellentesque ac tempor elit. volutpat tristique senectus mauris sollicitudin imperdiet non lectus hendrerit, suscipit nibh dolor aliquet. amet, finibus, eu vel sagittis Ut adipiscing ipsum netus Mauris malesuada porttitor interdum. interdum. fames Duis et leo ac lorem orci molestie et nibh. Suspendisse tempor turpis bibendum. Sed est. Lorem eu ac risus sed ultricies"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"vestibulum. netus amet, ultricies eu Nam Quisque et sollicitudin sit egestas. sagittis vel finibus, hendrerit, fames Mauris nibh molestie cursus suscipit tempor risus tristique eros. ac orci Nam Aenean adipiscing interdum. lorem sem eu pellentesque risus ac non leo et consectetur turpis est."</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"at Ut nibh tristique Sed nisl non tempor porttitor ac libero. Quisque Lorem amet, finibus, risus est. a Ut eros. Duis et sem risus ac interdum. ac tristique egestas. molestie"</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"et fames eros. libero. elit. Pellentesque consectetur ac interdum. leo Sed purus habitant netus imperdiet bibendum. egestas. lectus morbi Aenean at orci nisl aliquet. malesuada a Nam sagittis sollicitudin ac dolor et eu nibh finibus, vel turpis non in,"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"preposition"</span><span class="p">:</span><span class="w"> </span><span class="s2">"imperdiet elit. porttitor ac bibendum. Nam interdum. est. Quisque tristique sit non a in, adipiscing Duis Mauris Ut Pellentesque mauris tempor Nam eros. turpis nibh. habitant dolor Sed massa orci non netus sem scelerisque. tempor ipsum finibus, nisl Lorem ac at consectetur tristique sed vestibulum. interdum. volutpat sagittis sollicitudin egestas. cursus et hendrerit, nibh malesuada libero. aliquet. dolor molestie vel vel lectus lorem ultricies risus suscipit senectus amet, eu eu pellentesque Suspendisse purus ac Ut leo et morbi ac Aenean fames risus molestie"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"short_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"et risus aliquet. sollicitudin dolor elit. Mauris nibh nisl ac eu amet, malesuada fames tempor habitant tristique Sed vestibulum. nibh. purus Pellentesque cursus ac Nam ipsum tristique dolor sagittis tempor orci lorem in,"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"autocomplete"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"document_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"facet"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"last_edited_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-07-08T22:05:18+00:00"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"phase"</span><span class="p">:</span><span class="w"> </span><span class="s2">"beta"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"public_updated_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-06-15T01:10:40+00:00"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"publishing_app"</span><span class="p">:</span><span class="w"> </span><span class="s2">"content-publisher"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"routes"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"schema_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"facet"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"finibus, netus molestie suscipit eros. Ut ac sed Duis Sed a interdum. ac morbi massa libero. ipsum Mauris tristique habitant Quisque sollicitudin non nibh. sem ac Lorem nibh porttitor at non Pellentesque leo et volutpat egestas. Aenean et hendrerit, dolor eu tempor mauris lectus Nam"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<hr>
+<h2 id='publisher-links-schema'>Publisher links schema</h2><p>The links for this item. This is what a publishing application sends in a
+<a href="http://www.rubydoc.info/github/alphagov/gds-api-adapters/GdsApi/PublishingApiV2#patch_links-instance_method"><code>patch_links</code></a> call.</p>
+<h3 id='attributes'>Attributes</h3>
+<table class='schema-table'><tr><td><strong>bulk_publishing</strong><br/><code>boolean</code></td> <td><br/></td></tr>
+<tr><td><strong>links</strong><br/><code>object</code></td> <td><table class='schema-table'><tr><td><strong>facet_values</strong><br/></td> <td>Possible facet_values to show for non-dynamic select facets. All values are shown regardless of the search.<br/></td></tr>
+<tr><td><strong>parent</strong><br/></td> <td>The facet_group this facet belongs to.<br/></td></tr></table></td></tr>
+<tr><td><strong>previous_version</strong><br/><code>string</code></td> <td><br/></td></tr></table>
+<p><a href="https://github.com/alphagov/govuk-content-schemas/blob/master/dist/formats/facet/publisher/links.json">View this schema on GitHub</a></p>
+<h3 id='random-example'>Random example</h3><div class="highlight"><pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"bulk_publishing"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"previous_version"</span><span class="p">:</span><span class="w"> </span><span class="s2">"libero. Nam risus turpis pellentesque Nam Ut porttitor hendrerit, vel ac Lorem massa eu non leo a lorem senectus eu amet, Quisque nisl tristique sit risus at aliquet. sem habitant purus scelerisque. ultricies in, lectus elit. sollicitudin molestie non dolor Ut Duis cursus consectetur Suspendisse vestibulum. morbi egestas. nibh. tempor dolor fames ac imperdiet est. orci et malesuada interdum. interdum. eros. tristique Pellentesque ac sagittis ipsum netus Mauris sed et adipiscing bibendum. volutpat finibus, ac mauris Aenean molestie nibh vel suscipit"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+
+  <style media="screen">
+    .technical-documentation pre {
+      max-height: 400px;
+    }
+  </style>
+
+            
+          </main>
+
+          <aside>
+              <ul class="contribution-banner">
+                <li><a href="https://github.com/alphagov/govuk-developer-docs/blob/master/source/templates/schema_template.html.md.erb">View source</a></li>
+                <li><a href="https://github.com/alphagov/govuk-developer-docs/issues/new?labels=bug&amp;title=Re:%20''&amp;body=Problem%20with%20''%20(https://docs.publishing.service.gov.uk/content-schemas/facet.html)">Report problem</a></li>
+                <li><a href="https://github.com/alphagov/govuk-developer-docs">GitHub Repo</a></li>
+              </ul>
+          </aside>
+
+          <footer class="govuk-footer app-footer" role="contentinfo">
+  <div class="govuk-footer__meta">
+    <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+
+
+      <svg
+        aria-hidden="true"
+        focusable="false"
+        class="govuk-footer__licence-logo"
+        xmlns="http://www.w3.org/2000/svg"
+        viewbox="0 0 483.2 195.7"
+        height="17"
+        width="41"
+      >
+        <path
+          fill="currentColor"
+          d="M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145"
+        />
+      </svg>
+      <span class="govuk-footer__licence-description">
+        All content is available under the
+        <a
+          class="govuk-footer__link"
+          href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+          rel="license"
+        >Open Government Licence v3.0</a>, except where otherwise stated
+      </span>
+    </div>
+    <div class="govuk-footer__meta-item">
+      <a
+        class="govuk-footer__link govuk-footer__copyright-logo"
+        href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/"
+      >© Crown copyright</a>
+    </div>
+  </div>
+</footer>
+
+        </div>
+      </div>
+    </div>
+
+    
+    <script src="/javascripts/application.js"></script>
+  </body>
+</html>
