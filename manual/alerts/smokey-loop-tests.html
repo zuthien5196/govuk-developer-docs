@@ -8,23 +8,23 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
-    <title>Run high priority tests - GOV.UK Developer Documentation</title>
+    <title>Smokey loop tests - GOV.UK Developer Documentation</title>
 
     <link href="/stylesheets/manifest.css" rel="stylesheet" />
 
-    <link rel="canonical" href="https://docs.publishing.service.gov.uk/manual/alerts/high-priority-tests.html">
+    <link rel="canonical" href="https://docs.publishing.service.gov.uk/manual/alerts/smokey-loop-tests.html">
 
 
       <meta property="og:image" content="https://docs.publishing.service.gov.uk/images/govuk-large.png" />
       <meta property="og:site_name" content="GOV.UK Developer Documentation" />
-      <meta property="og:title" content="Run high priority tests" />
+      <meta property="og:title" content="Smokey loop tests" />
       <meta property="og:type" content="object" />
-      <meta property="og:url" content="https://docs.publishing.service.gov.uk/manual/alerts/high-priority-tests.html" />
+      <meta property="og:url" content="https://docs.publishing.service.gov.uk/manual/alerts/smokey-loop-tests.html" />
       <meta property="twitter:card" content="summary" />
       <meta property="twitter:domain" content="docs.publishing.service.gov.uk" />
       <meta property="twitter:image" content="https://docs.publishing.service.gov.uk/images/govuk-large.png" />
-      <meta property="twitter:title" content="Run high priority tests - GOV.UK Developer Documentation" />
-      <meta property="twitter:url" content="https://docs.publishing.service.gov.uk/manual/alerts/high-priority-tests.html" />
+      <meta property="twitter:title" content="Smokey loop tests - GOV.UK Developer Documentation" />
+      <meta property="twitter:url" content="https://docs.publishing.service.gov.uk/manual/alerts/smokey-loop-tests.html" />
 
     
   </head>
@@ -129,27 +129,21 @@
                   <a href='/manual.html' class="toc__back-link govuk-link">&lsaquo; Manual</a>
   <ul>
   <li>
-    <a href="#header"><span>Run high priority tests</span></a>
+    <a href="#header"><span>Smokey loop tests</span></a>
     <ul>
       <li>
-        <a href="#tests-failing"><span>Tests failing</span></a>
+        <a href="#nginx"><span>Nginx</span></a>
         <ul>
-          <li>
-            <a href="#application-code-change"><span>Application code change</span></a>
-          </li>
-          <li>
-            <a href="#nginx"><span>Nginx</span></a>
-          </li>
           <li>
             <a href="#traceback-most-recent-call-last-or-tmpsmokey-json-is-older-than-30m"><span>Traceback (most recent call last): or /tmp/smokey.json is older than 30m</span></a>
           </li>
           <li>
             <a href="#http-status-code-550-restclientrequestfailed"><span>HTTP status code 550 (RestClient::RequestFailed)</span></a>
           </li>
-          <li>
-            <a href="#integration-with-signon"><span>Integration with Signon</span></a>
-          </li>
         </ul>
+      </li>
+      <li>
+        <a href="#smokey-user"><span>Smokey user</span></a>
       </li>
     </ul>
   </li>
@@ -166,17 +160,25 @@
       This page describes what to do in case of an
       <a href='https://docs.publishing.service.gov.uk/manual/tools.html#icinga'>Icinga alert</a>.
       For more information you could
-      <a href='https://github.com/alphagov/govuk-puppet/search?utf8=%E2%9C%93&q=high-priority-tests'>
+      <a href='https://github.com/alphagov/govuk-puppet/search?utf8=%E2%9C%93&q=smokey-loop-tests'>
         search the govuk-puppet repo for the source of the alert
       </a>
     </div>
 
-   <h1 id='header'>Run high priority tests</h1><p>The high priority tests <a href="https://github.com/alphagov/smokey">come from Smokey</a> and <a href="https://github.com/alphagov/govuk-puppet/blob/master/modules/monitoring/manifests/checks/smokey.pp">the Icinga check is defined in Puppet</a>.
-Smokey can fail with an error message &ldquo;Run high priority tests&rdquo;, or simply with &ldquo;Smokey failed&rdquo;.</p>
-<h2 id='tests-failing'>Tests failing</h2><h3 id='application-code-change'>Application code change</h3><p>If the error was &ldquo;Smokey failed&rdquo;, the first thing worth looking at is the log for the
-failed Smokey run on Jenkins. If it&rsquo;s an application error, it&rsquo;s quite possible that
-Smokey is just doing its job and has caught an issue to investigate further.</p>
-<h3 id='nginx'>Nginx</h3><p>If many of the tests are failing in an AWS environment, it may be because the Nginx services haven&rsquo;t registered new
+   <h1 id='header'>Smokey loop tests</h1><p><a href="https://github.com/alphagov/smokey">Smokey</a> runs in a continuous loop in each environment.
+and dumps the output of each run into a <code>tmp/smokey.json</code> file.
+We have <a href="https://github.com/alphagov/govuk-puppet/blob/master/modules/monitoring/manifests/checks/smokey.pp">Icinga checks</a> for <a href="https://github.com/alphagov/smokey/blob/master/docs/writing-tests.md#alerting-in-icinga">most Smokey features</a>, so that
+we are alerted when some aspect of GOV.UK may be in trouble.</p>
+<p>When a test fails, you should see a &ldquo;Smokey loop for &lt;feature&gt;&rdquo;
+alert. The alert description should contain the reason for the
+failure, so you can diagnose the problem.</p>
+
+<blockquote>
+<p><strong>NOTE</strong>: we have <a href="https://github.com/alphagov/govuk-puppet/blob/master/modules/icinga/manifests/config/smokey.pp">a separate &ldquo;Smokey&rdquo; alert</a> for manual runs
+of the Smokey job in Jenkins. This alert covers all Smokey
+features, while &ldquo;Smokey loop&rdquo; alerts are more granular.</p>
+</blockquote>
+<h2 id='nginx'>Nginx</h2><p>If many of the tests are failing in an AWS environment, it may be because the Nginx services haven&rsquo;t registered new
 boxes coming online or old ones going offline. You can try to restart the following services:</p>
 <div class="highlight"><pre class="highlight shell"><code><span class="nv">$ </span>fab <span class="nv">$environment</span> class:cache app.reload:nginx
 <span class="nv">$ </span>fab <span class="nv">$environment</span> class:draft_cache app.reload:nginx
@@ -190,45 +192,34 @@ logs or restarting the process.</p>
 smokey-loop and the new smoke tests cannot start a new proxy. It&rsquo;s necessary to kill the existing
 java process and restart smokey-loop.</p>
 <p>Replace process numbers as appropriate:</p>
-<div class="highlight"><pre class="highlight shell"><code><span class="nv">$ </span>ssh monitoring-1.production
+<div class="highlight"><pre class="highlight shell"><code><span class="nv">$ </span>gds govuk connect <span class="nt">-e</span> production ssh aws/monitoring
 <span class="o">&gt;</span> <span class="nb">sudo </span>service smokey-loop stop
 <span class="nv">$ </span>ps <span class="nt">-ef</span> | <span class="nb">grep </span>java
 <span class="o">&gt;</span> smokey    6385  6380 26 14:58 ?        00:00:54 java <span class="nt">-Dapp</span>.name<span class="o">=</span>browsermob-proxy <span class="nt">-Dbasedir</span><span class="o">=</span>/opt/smokey <span class="nt">-jar</span> /opt/smokey/lib/browsermob-dist-2.1.4.jar <span class="nt">--port</span> 3222
 <span class="nv">$ </span><span class="nb">sudo kill</span> <span class="nt">-9</span> 6385
 <span class="nv">$ </span><span class="nb">sudo </span>service smokey-loop start
-</code></pre></div><p>If Smokey fails with simply &ldquo;Smokey failed&rdquo;, SSH into the Jenkins machine, then perform
-these same steps:</p>
-<div class="highlight"><pre class="highlight shell"><code><span class="nv">$ </span>ps <span class="nt">-ef</span> | <span class="nb">grep </span>java
-<span class="o">&gt;</span> smokey    6385  6380 26 14:58 ?        00:00:54 java <span class="nt">-Dapp</span>.name<span class="o">=</span>browsermob-proxy <span class="nt">-Dbasedir</span><span class="o">=</span>/opt/smokey <span class="nt">-jar</span> /opt/smokey/lib/browsermob-dist-2.1.4.jar <span class="nt">--port</span> 3222
-<span class="nv">$ </span><span class="nb">sudo kill</span> <span class="nt">-9</span> 6385
-</code></pre></div><p>&hellip;then re-run the Jenkins build.</p>
-<h3 id='integration-with-signon'>Integration with Signon</h3><p>These tests rely on a user in <a href="https://github.com/alphagov/signon">GOV.UK Signon</a>. All Signon users have
+</code></pre></div><h2 id='smokey-user'>Smokey user</h2><p>These tests rely on a user in <a href="https://github.com/alphagov/signon">GOV.UK Signon</a>. All Signon users have
 their passphrase expire periodically. This will cause the tests to fail.</p>
 <p>You should change the passphrase of the account and rotate it in encrypted
 hieradata. Here&rsquo;s an <a href="https://github.com/alphagov/govuk-secrets/pull/307">example PR in govuk-secrets</a>.</p>
-<p>Alternatively, you can fake a passphrase change in the Signon Rails console,
-though this will only fix the alert temporarily.</p>
-<div class="highlight"><pre class="highlight plaintext"><code>$ govuk_app_console signon
-irb(main):001:0&gt; smokey = User.find_by(name: "Smokey (test user)")
-irb(main):002:0&gt; smokey.update_attribute(:password_changed_at, Time.now)
-</code></pre></div>
+
 
   <div class='related-content'>
 
 </div>
 
 
-              <div data-module='page-expiry' data-last-reviewed-on="2020-12-15">
+              <div data-module='page-expiry' data-last-reviewed-on="2021-01-08">
     <div class='page-expiry--not-expired'>
-      This page was last reviewed on 15 June 2020.
+      This page was last reviewed on 8 July 2020.
 
-        It needs to be reviewed again on 15 December 2020
+        It needs to be reviewed again on 8 January 2021
         by the page owner <a href="">#govuk-2ndline</a>
         .
     </div>
 
     <div class='page-expiry--expired'>
-      This page was set to be reviewed before 15 December 2020
+      This page was set to be reviewed before 8 January 2021
        by the page owner <a href="">#govuk-2ndline</a>.
       This might mean the content is out of date.
     </div>
@@ -238,8 +229,8 @@ irb(main):002:0&gt; smokey.update_attribute(:password_changed_at, Time.now)
 
           <aside>
               <ul class="contribution-banner">
-                <li><a href="https://github.com/alphagov/govuk-developer-docs/blob/master/source/manual/alerts/high-priority-tests.html.md">View source</a></li>
-                <li><a href="https://github.com/alphagov/govuk-developer-docs/issues/new?labels=bug&amp;title=Re:%20'Run%20high%20priority%20tests'&amp;body=Problem%20with%20'Run%20high%20priority%20tests'%20(https://docs.publishing.service.gov.uk/manual/alerts/high-priority-tests.html)">Report problem</a></li>
+                <li><a href="https://github.com/alphagov/govuk-developer-docs/blob/master/source/manual/alerts/smokey-loop-tests.html.md">View source</a></li>
+                <li><a href="https://github.com/alphagov/govuk-developer-docs/issues/new?labels=bug&amp;title=Re:%20'Smokey%20loop%20tests'&amp;body=Problem%20with%20'Smokey%20loop%20tests'%20(https://docs.publishing.service.gov.uk/manual/alerts/smokey-loop-tests.html)">Report problem</a></li>
                 <li><a href="https://github.com/alphagov/govuk-developer-docs">GitHub Repo</a></li>
               </ul>
           </aside>
