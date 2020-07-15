@@ -134,15 +134,6 @@
       <li>
         <ul>
           <li>
-            <a href="#icinga-checks"><span>Icinga checks</span></a>
-          </li>
-          <li>
-            <a href="#useful-queries"><span>Useful queries</span></a>
-          </li>
-          <li>
-            <a href="#useful-rake-tasks"><span>Useful rake tasks</span></a>
-          </li>
-          <li>
             <a href="#still-stuck"><span>Still stuck?</span></a>
           </li>
         </ul>
@@ -167,31 +158,27 @@
       </a>
     </div>
 
-   <h1 id='header'>Email Alert API: Unprocessed content changes</h1><p>This means that there are some emails informing users of content changes
-which haven&rsquo;t been processed within the time we would expect.
-This may be fine and the emails will eventually go out, but it&rsquo;s worth some investigation.</p>
-<h3 id='icinga-checks'>Icinga checks</h3>
+   <h1 id='header'>Email Alert API: Unprocessed content changes</h1><p>This alert is triggered when content changes are not processed within the time we would expect.</p>
+
 <ul>
-<li><code>warning</code> - <code>content_changes</code> unprocessed for over 5 minutes</li>
-<li><code>critical</code> - <code>content_changes</code> unprocessed for over 10 minutes</li>
+<li><code>warning</code> - <code>content_changes</code> unprocessed for over 90 minutes</li>
+<li><code>critical</code> - <code>content_changes</code> unprocessed for over 120 minutes</li>
 </ul>
-<p>See the <a href="https://github.com/alphagov/email-alert-api/blob/master/app/workers/process_content_change_and_generate_emails_worker.rb">ProcessContentChangeAndGenerateEmailsWorker</a> for
-more information.</p>
-<h3 id='useful-queries'>Useful queries</h3><p>First, enter an Email Alert Api Rails console:</p>
-<div class="highlight"><pre class="highlight shell"><code><span class="nv">$ </span>gds govuk connect app-console <span class="nt">-e</span> production email-alert-api
-</code></pre></div><h4 id='check-which-content-changes-are-affected'>Check which content changes are affected</h4><div class="highlight"><pre class="highlight ruby"><code><span class="no">ContentChange</span><span class="p">.</span><span class="nf">where</span><span class="p">(</span><span class="s2">"created_at &lt; ?"</span><span class="p">,</span> <span class="mi">10</span><span class="p">.</span><span class="nf">minutes</span><span class="p">.</span><span class="nf">ago</span><span class="p">).</span><span class="nf">where</span><span class="p">(</span><span class="ss">processed_at: </span><span class="kp">nil</span><span class="p">)</span>
-</code></pre></div><h4 id='check-number-of-subscription-contents-built-for-a-content-change-you-would-expect-this-number-to-keep-going-up'>Check number of subscription contents built for a content change (you would expect this number to keep going up)</h4><div class="highlight"><pre class="highlight ruby"><code><span class="no">SubscriptionContent</span><span class="p">.</span><span class="nf">where</span><span class="p">(</span><span class="ss">content_change: </span><span class="n">content_change</span><span class="p">).</span><span class="nf">count</span>
-</code></pre></div><h4 id='resend-the-emails-for-a-content-change-ignore-ones-that-have-already-gone-out'>Resend the emails for a content change (ignore ones that have already gone out)</h4><div class="highlight"><pre class="highlight ruby"><code><span class="no">ProcessContentChangeAndGenerateEmailsWorker</span><span class="p">.</span><span class="nf">new</span><span class="p">.</span><span class="nf">perform</span><span class="p">(</span><span class="n">content_change</span><span class="p">.</span><span class="nf">id</span><span class="p">)</span>
-</code></pre></div><h4 id='resend-the-emails-for-a-content-change-in-bulk-ignore-ones-that-have-already-gone-out'>Resend the emails for a content change in bulk (ignore ones that have already gone out)</h4><div class="highlight"><pre class="highlight ruby"><code><span class="no">ContentChange</span><span class="p">.</span><span class="nf">where</span><span class="p">(</span><span class="s2">"created_at &lt; ?"</span><span class="p">,</span> <span class="mi">10</span><span class="p">.</span><span class="nf">minutes</span><span class="p">.</span><span class="nf">ago</span><span class="p">).</span><span class="nf">where</span><span class="p">(</span><span class="ss">processed_at: </span><span class="kp">nil</span><span class="p">).</span><span class="nf">map</span> <span class="p">{</span> <span class="o">|</span><span class="n">content_change</span><span class="o">|</span> <span class="no">ProcessContentChangeAndGenerateEmailsWorker</span><span class="p">.</span><span class="nf">new</span><span class="p">.</span><span class="nf">perform</span><span class="p">(</span><span class="n">content_change</span><span class="p">.</span><span class="nf">id</span><span class="p">)</span>  <span class="p">}</span>
-</code></pre></div><h3 id='useful-rake-tasks'>Useful rake tasks</h3><h4 id='check-sent-pending-and-failed-email-counts-for-a-content-change'>Check sent, pending and failed email counts for a content change</h4>
+<p>Every 30 minutes, <a href="https://github.com/alphagov/email-alert-api/blob/master/app/workers/recover_lost_jobs_worker.rb">RecoverLostJobsWorker</a> automatically requeues jobs for any
+unprocessed content changes and messages that are over 1-hour old.</p>
+<p>If you see this alert it is likely that something has broken in Email Alert API
+that is either blocking one or all recovery attempts.</p>
+<p>To diagnose this problem, consult <a href="https://sentry.io/organizations/govuk/issues/?project=202220">Sentry</a>
+to see if there are errors reported.</p>
+<p>If you find nothing conclusive in Sentry, go to <a href="https://docs.publishing.service.gov.uk/manual/logging.html#kibana">Email Alert API sidekiq logs</a> and check the jobs are running correctly.</p>
+<p>If the problem persists, run the <a href="https://github.com/alphagov/email-alert-api/blob/master/app/workers/recover_lost_jobs_worker.rb">RecoverLostJobsWorker</a> and/or [ProcessContentChangeWorker] <a href="https://stackoverflow.com/a/48543738">directly</a>
+to see if any problems occur.</p>
+<h3 id='still-stuck'>Still stuck?</h3>
 <ul>
-<li><a href="https://deploy.blue.production.govuk.digital/job/run-rake-task/parambuild/?TARGET_APPLICATION=email-alert-api&amp;MACHINE_CLASS=email_alert_api&amp;RAKE_TASK=report:content_change_email_status_count['one_required_content_change_id','optional_second_content_change_id','and_so_on']">content_change_email_status_count</a></li>
+<li><a href="/manual/email-troubleshooting.html">General troubleshooting tips</a></li>
+<li><a href="/apis/email-alert-api/troubleshooting.html">Email Alert API troubleshooting</a> for more information</li>
+<li><a href="https://grafana.production.govuk.digital/dashboard/file/email_alert_api.json?refresh=10s&amp;orgId=1">Email Alert API Metrics dashboard</a> to check if emails are going out</li>
 </ul>
-<h4 id='check-failed-email-ids-and-failure-reasons-for-a-content-change'>Check failed email ids and failure reasons for a content change</h4>
-<ul>
-<li><a href="https://deploy.blue.production.govuk.digital/job/run-rake-task/parambuild/?TARGET_APPLICATION=email-alert-api&amp;MACHINE_CLASS=email_alert_api&amp;RAKE_TASK=report:content_change_failed_emails['one_required_content_change_id','optional_second_content_change_id','and_so_on']">content_change_failed_emails</a></li>
-</ul>
-<h3 id='still-stuck'>Still stuck?</h3><p>Read <a href="/manual/email-troubleshooting.html">email troubleshooting</a>.</p>
 
 
   <div class='related-content'>
@@ -221,17 +208,17 @@ more information.</p>
 </div>
 
 
-              <div data-module='page-expiry' data-last-reviewed-on="2020-12-04">
+              <div data-module='page-expiry' data-last-reviewed-on="2021-01-14">
     <div class='page-expiry--not-expired'>
-      This page was last reviewed on 4 June 2020.
+      This page was last reviewed on 14 July 2020.
 
-        It needs to be reviewed again on 4 December 2020
+        It needs to be reviewed again on 14 January 2021
         by the page owner <a href="">#govuk-2ndline</a>
         .
     </div>
 
     <div class='page-expiry--expired'>
-      This page was set to be reviewed before 4 December 2020
+      This page was set to be reviewed before 14 January 2021
        by the page owner <a href="">#govuk-2ndline</a>.
       This might mean the content is out of date.
     </div>
