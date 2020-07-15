@@ -343,7 +343,6 @@ management.</p>
           <span class="na">restore-keys</span><span class="pi">:</span> <span class="s">bundle</span>
       <span class="pi">-</span> <span class="na">run</span><span class="pi">:</span> <span class="s">bundle install --jobs 4 --retry 3 --deployment</span>
       <span class="pi">-</span> <span class="na">uses</span><span class="pi">:</span> <span class="s">actions/setup-node@v1</span>
-      <span class="pi">-</span> <span class="na">run</span><span class="pi">:</span> <span class="s">npm install -g yarn</span>
       <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Check for cached node modules</span>
         <span class="na">uses</span><span class="pi">:</span> <span class="s">actions/cache@v1</span>
         <span class="na">with</span><span class="pi">:</span>
