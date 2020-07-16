@@ -404,34 +404,24 @@ a publishing application sends to the publishing-api in a
 <tr><td><strong>update_type</strong><br/></td> <td><br/>Allowed values: <code>major</code>, <code>minor</code>, <code>republish</code></td></tr></table>
 <p><a href="https://github.com/alphagov/govuk-content-schemas/blob/master/dist/formats/external_content/publisher/schema.json">View this schema on GitHub</a></p>
 <h3 id='random-example'>Random example</h3><div class="highlight"><pre class="highlight json"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">"auth_bypass_ids"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-    </span><span class="s2">"e22b452f-bdd0-48d5-9233-79d59c379150"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"1ba36871-ccbe-49d1-8b52-bd2791b70915"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"814c414e-12eb-4b6a-b9b7-ebe08176f9cd"</span><span class="w">
-  </span><span class="p">],</span><span class="w">
-  </span><span class="nl">"base_path"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"change_note"</span><span class="p">:</span><span class="w"> </span><span class="s2">"nibh nisl Lorem finibus, mauris elit. volutpat egestas. tristique malesuada habitant libero. risus et ac at Nam ac Quisque non tempor dolor scelerisque. Nam pellentesque cursus ipsum interdum. Ut Duis eu sem tempor eu amet, vestibulum. Mauris in, imperdiet risus eros. porttitor adipiscing ac lorem aliquet. sollicitudin sit vel turpis massa molestie consectetur netus tristique Pellentesque a est. Aenean vel interdum. suscipit dolor ultricies Suspendisse Sed purus hendrerit, ac molestie et leo nibh. bibendum. non Ut fames sagittis sed orci senectus lectus morbi"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sagittis Ut dolor imperdiet vestibulum. mauris non risus ac hendrerit, sem pellentesque dolor orci molestie eu Pellentesque ultricies suscipit tristique aliquet. lorem tristique Mauris tempor egestas. leo elit. at Quisque Nam cursus eros. risus molestie tempor habitant eu Sed malesuada Nam lectus consectetur est. nibh. nibh non Suspendisse a in, Duis senectus sed"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"analytics_identifier"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"bulk_publishing"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"change_note"</span><span class="p">:</span><span class="w"> </span><span class="s2">"eu egestas. volutpat purus porttitor bibendum. Quisque lectus massa Mauris imperdiet sed Sed ipsum ac ac orci nisl risus morbi turpis in, elit. risus habitant eu Suspendisse mauris amet, eros. non finibus, sit Duis Nam Lorem consectetur Ut ac"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"eros. Nam hendrerit, nibh. senectus molestie orci risus vestibulum. dolor Mauris nibh in, bibendum. amet, sollicitudin fames Nam ac turpis molestie vel cursus non sed tempor sagittis Duis eu Sed Quisque est. habitant mauris porttitor morbi purus suscipit ac"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"details"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://example.com/b24fe095-aa0a-4fe7-bc22-90a19726bc40/17284c56-f6aa-4d7e-8466-0caad5f46df2/fab2a3a3-27b3-419b-994b-ec7d9bb08e37/5f15e325-3bfa-4e02-9c69-e2034193ad90/b1c7f29d-c153-4251-acae-9b0641538b14#aac3358f484727a01286b8ec8936c484"</span><span class="w">
+    </span><span class="nl">"hidden_search_terms"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="s2">"et nibh Sed volutpat sed interdum. Lorem a tristique sollicitudin eu vestibulum. adipiscing leo Pellentesque Aenean eros. porttitor Ut imperdiet aliquet. malesuada in, mauris dolor suscipit turpis orci Suspendisse pellentesque scelerisque. libero. molestie eu tempor purus morbi interdum. ultricies dolor Quisque Duis at non molestie nisl tempor"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">""</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://example.com/a796505d-acaa-41b4-8266-4e9e4baf6e8d/67504fde-9da1-465e-b9c2-823975a5a635/6448220e-9efe-483f-ad48-e55a80a4bf8a/0df039cd-faa4-4f35-b038-29004bf071cf#4b776528ab9957ffe02bcd14bcd3bf03"</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"document_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"external_content"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"first_published_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-08-18T18:53:34+00:00"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"last_edited_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-06-20T00:38:19+00:00"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"public_updated_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-06-06T06:08:16+00:00"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"publishing_app"</span><span class="p">:</span><span class="w"> </span><span class="s2">"email-alert-frontend"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"redirects"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-    </span><span class="s2">"molestie Nam aliquet. Suspendisse hendrerit, leo et nisl risus netus molestie ac tristique Quisque sem vestibulum. nibh. morbi interdum. egestas. eu scelerisque. dolor Ut cursus a sed eros. turpis porttitor imperdiet vel orci Lorem Pellentesque senectus ac risus finibus, malesuada Duis interdum. fames Mauris adipiscing ac Nam purus tristique libero. in, sagittis amet, suscipit mauris et habitant ipsum nibh sollicitudin Sed sit est. non pellentesque Ut eu ultricies elit. consectetur lectus ac non volutpat massa dolor tempor tempor lorem at Aenean vel bibendum."</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"Pellentesque dolor"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"nibh. vel dolor cursus purus mauris ac tempor aliquet. eu ac at egestas. est. eu finibus, sagittis fames eros. molestie volutpat a tristique leo Nam scelerisque. amet, Pellentesque Ut senectus adipiscing bibendum. dolor ac consectetur interdum. Ut Quisque lectus vestibulum. Nam et non ultricies"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"habitant consectetur dolor eu at eros. pellentesque senectus nibh. lectus ac vestibulum. eu bibendum. a tempor Lorem molestie aliquet. Quisque netus Pellentesque"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"sed risus in, ac imperdiet nisl pellentesque libero. molestie sollicitudin tristique tempor Ut scelerisque. netus"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"malesuada ultricies massa sollicitudin sit ac consectetur ac nibh lorem Lorem Ut eros. ac senectus porttitor Duis tristique Ut a Quisque pellentesque suscipit amet, tempor ipsum molestie interdum. tempor sem scelerisque. Sed at Aenean Nam egestas. nibh. tristique eu cursus vestibulum. bibendum. purus hendrerit, nisl turpis non lectus volutpat eu et imperdiet mauris fames leo morbi interdum. et est. Pellentesque dolor habitant Suspendisse risus netus non Nam vel aliquet. molestie dolor in, Mauris elit. vel sed orci libero. risus adipiscing sagittis ac finibus,"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"vel sem imperdiet sit Sed tristique Nam ipsum nisl Quisque tristique ac mauris fames tempor turpis a amet, hendrerit, at leo libero. Suspendisse Aenean bibendum. ac senectus eu ultricies suscipit adipiscing morbi purus Ut dolor molestie interdum. sagittis Lorem habitant molestie vel Mauris pellentesque Duis orci elit. ac ac egestas. netus Ut non aliquet. malesuada consectetur est. eu sollicitudin Pellentesque in, tempor finibus, nibh dolor risus Nam porttitor nibh. scelerisque. lorem vestibulum. risus non interdum. massa lectus sed cursus et eros. et volutpat"</span><span class="w">
-  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"publishing_app"</span><span class="p">:</span><span class="w"> </span><span class="s2">"service-manual-publisher"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"rendering_app"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
   </span><span class="nl">"schema_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"external_content"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ipsum Duis eu sagittis aliquet. Sed a tempor Lorem sed amet, mauris massa bibendum. vel risus egestas. Quisque ac finibus, eros. orci Ut morbi suscipit hendrerit, habitant ac scelerisque. elit. consectetur eu porttitor lectus adipiscing ultricies libero. molestie dolor nibh. dolor fames malesuada Pellentesque pellentesque imperdiet est. sit tempor Ut nibh in, turpis tristique netus Aenean tristique ac leo"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"update_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"major"</span><span class="w">
+  </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"a morbi in, finibus, elit. consectetur dolor eros. et imperdiet at tristique Aenean sagittis"</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div>
 <hr>
@@ -443,6 +433,10 @@ a publishing application sends to the publishing-api in a
 <tr><td><strong>previous_version</strong><br/><code>string</code></td> <td><br/></td></tr></table>
 <p><a href="https://github.com/alphagov/govuk-content-schemas/blob/master/dist/formats/external_content/publisher/links.json">View this schema on GitHub</a></p>
 <h3 id='random-example'>Random example</h3><div class="highlight"><pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"bulk_publishing"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"previous_version"</span><span class="p">:</span><span class="w"> </span><span class="s2">"netus molestie Lorem Ut orci finibus,"</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div>
 
