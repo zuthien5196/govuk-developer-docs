@@ -449,6 +449,8 @@ lower priority queue to avoid delays to standard publishing activity.</li>
 <ul>
 <li>If a <code>base_path</code> is provided it is reserved for use of the given<br>
 <code>publishing_app</code>.</li>
+<li>If this is changing the <code>base_path</code> of a draft edition the previous<br>
+<code>base_path</code> reserved will be discarded.</li>
 <li>Any draft editions for different documents that have a matching <code>base_path</code><br>
 and have a document_type of "coming soon", "gone", "redirect" or<br>
 "unpublishing" will be deleted.</li>
@@ -739,6 +741,7 @@ the draft content store with the published item, if one exists. Uses<br>
 <h3 id="state-changes">State changes</h3>
 <ul>
 <li>The draft edition will be deleted from the Publishing API.</li>
+<li>Any reserved paths unique to the draft edition will also be discarded.</li>
 <li>The draft edition will be removed from the draft content store.</li>
 <li>If a published edition exists it will be added to the draft content store.</li>
 </ul>
