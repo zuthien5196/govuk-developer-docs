@@ -175,7 +175,7 @@ that is either blocking one or all recovery attempts.</p>
 <p>To diagnose this problem, consult <a href="https://sentry.io/organizations/govuk/issues/?project=202220">Sentry</a>
 to see if there are errors reported.</p>
 <p>If you find nothing conclusive in Sentry, go to <a href="https://docs.publishing.service.gov.uk/manual/logging.html#kibana">Email Alert API sidekiq logs</a> and check the jobs are running correctly.</p>
-<p>If the problem persists, run the <a href="https://github.com/alphagov/email-alert-api/blob/master/app/workers/recover_lost_jobs_worker.rb">RecoverLostJobsWorker</a> and/or [ProcessMessageWorker] <a href="https://stackoverflow.com/a/48543738">directly</a>
+<p>If the problem persists, run the <a href="https://github.com/alphagov/email-alert-api/blob/master/app/workers/recover_lost_jobs_worker.rb">RecoverLostJobsWorker</a> and/or <a href="https://github.com/alphagov/email-alert-api/blob/master/app/workers/process_message_worker.rb">ProcessMessageWorker</a> <a href="https://stackoverflow.com/a/48543738">directly</a>
 to see if any problems occur.</p>
 <h3 id='still-stuck'>Still stuck?</h3>
 <ul>
@@ -212,17 +212,17 @@ to see if any problems occur.</p>
 </div>
 
 
-              <div data-module='page-expiry' data-last-reviewed-on="2021-01-14">
+              <div data-module='page-expiry' data-last-reviewed-on="2021-01-16">
     <div class='page-expiry--not-expired'>
-      This page was last reviewed on 14 July 2020.
+      This page was last reviewed on 16 July 2020.
 
-        It needs to be reviewed again on 14 January 2021
+        It needs to be reviewed again on 16 January 2021
         by the page owner <a href="">#govuk-2ndline</a>
         .
     </div>
 
     <div class='page-expiry--expired'>
-      This page was set to be reviewed before 14 January 2021
+      This page was set to be reviewed before 16 January 2021
        by the page owner <a href="">#govuk-2ndline</a>.
       This might mean the content is out of date.
     </div>
