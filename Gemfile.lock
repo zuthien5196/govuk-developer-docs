@@ -28,8 +28,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.12.2)
-    commonmarker (0.21.0)
-      ruby-enum (~> 0.5)
+    commonmarker (0.23.7)
     compass (1.0.3)
       chunky_png (~> 1.2)
       compass-core (~> 1.0.2)
@@ -42,7 +41,7 @@ GEM
       sass (>= 3.3.0, < 3.5)
     compass-import-once (1.0.5)
       sass (>= 3.2, < 3.5)
-    concurrent-ruby (1.1.6)
+    concurrent-ruby (1.2.0)
     contracts (0.13.0)
     crack (0.4.3)
       safe_yaml (~> 1.0.0)
@@ -234,8 +233,6 @@ GEM
       rubocop
     rubocop-rspec (1.39.0)
       rubocop (>= 0.68.1)
-    ruby-enum (0.8.0)
-      i18n
     ruby-progressbar (1.10.1)
     safe_yaml (1.0.5)
     sass (3.4.25)
